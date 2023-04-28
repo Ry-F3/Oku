@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/fav.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Oku</title>
 </head>
@@ -61,15 +62,15 @@
                                 <form action="">
                                     <div class="grid_bottom">
                                         <label for="mCap">Market Cap</label>
-                                        <input type="number" name="cap" id="mCap">
+                                        <input type="number" min="0" name="cap" id="mCap">
                                     </div>
                                     <div class="grid_bottom">
                                         <label for="cSup">Circulating Supply</label>
-                                        <input type="number" name="supply" id="cSup"> 
+                                        <input type="number" min="0" name="supply" id="cSup"> 
                                     </div>
                                     <div class="grid_bottom">
                                         <label for="price">Price</label>
-                                        <input type="number" name="price" id="price">
+                                        <input type="number" min="0" name="price" id="price">
                                     </div>
                                 </form>
                             </div>
