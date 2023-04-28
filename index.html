@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Oku</title>
 </head>
 
@@ -39,15 +40,37 @@
 
                     </div>
                 </div>
-                <div class="circle Porange"></div>
+                <div class="circle Porange">
+                    <i class="abs ri-bar-chart-line"></i>
+                </div>
                 <div class="column content">
 
                     <div class="box">
-                        <div class="btn_box">
-                            <button class="btn">Oku Calc</button>
-                            <button class="btn">Portfolio</button> 
-                        </div>
-                        
+                        <div class="grid_box">
+                           
+                            <div class="secondary_font grid_top">
+                                <button class="btn">Oku Calc</button>
+                                <button class="btn">Portfolio</button>  
+                            </div>
+                           
+                            <div class="grid_bottom secondary_font">
+                                <form action="">
+                                    <div class="grid_bottom">
+                                        <label for="mCap">Market Cap</label>
+                                        <input type="number" name="cap" id="mCap">
+                                    </div>
+                                    <div class="grid_bottom">
+                                        <label for="cSup">Circulating Supply</label>
+                                        <input type="number" name="supply" id="cSup"> 
+                                    </div>
+                                    <div class="grid_bottom">
+                                        <label for="price">Price</label>
+                                        <input type="number" name="price" id="price">
+                                    </div>
+                                </form>
+                            </div>
+                            
+                          </div>
                     </div>
                     <div class="img">
                         <img id="b_img" src="assets/images/vector.png">
@@ -63,7 +86,7 @@
 
 
     <script src="assets/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/868033ccb5.js" crossorigin="anonymous"></script>
-</body>
 
+</body>
+<script src="https://kit.fontawesome.com/868033ccb5.js" crossorigin="anonymous"></script>
 </html>
