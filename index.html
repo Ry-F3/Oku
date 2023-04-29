@@ -20,6 +20,7 @@
                         <a href="#" class="logo">Oku.</a>
                     </li>
                 </ul>
+                
                 <ul>
                     <li>
                         <a href="#" class="c_btn">Contact</a>
@@ -47,43 +48,67 @@
                 <div class="column content">
 
                     <div class="box">
-                        <div class="grid_box">
-                            <div class="secondary_font grid_top">
+                        <div class="grid_box secondary_font">
+                            <div class="grid_top">
                                 <div class="calc_nav">
                                     <video id="frame" loop autoplay>
                                         <source src="assets/video/trading.mp4" type="video/mp4">
                                     </video>
                                     <button class="btn_active">Oku Calc</button>
-                                    <button class="btn_click">Portfolio</button>  
+                                    <button class="btn_click">Portfolio</button>
                                 </div>
                             </div>
-        
-                            <div class="grid_bottom secondary_font">
-                                <form action="">
-                                    <div class="grid_bottom">
-                                        <label for="mCap">Market Cap</label>
-                                        <input type="number" min="0" name="cap" id="mCap">
+                            <div class="grid_input">
+                                <div class="input_wrap">
+                                    <label class="input_label" id="capSwitch" for="cap-el">Market Cap</label>
+                                    <div class="input_box">
+                                        <div class="symbol">
+                                            <span>$</span>
+                                        </div>
+                                        <input class="inputCalc" type="number" min="0" id="cap-el">
+                                        <div>
+                                            <span>
+                                                <button id="switch" class="btn">
+                                                    <i class="ri-arrow-up-down-line"></i>
+                                                </button>
+
+                                                <input id="check" type= "checkbox">
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="grid_bottom">
-                                        <label for="cSup">Circulating Supply</label>
-                                        <input type="number" min="0" name="supply" id="cSup"> 
-                                    </div>
-                                    <div class="grid_bottom">
-                                        <label for="price">Price</label>
-                                        <input type="number" min="0" name="price" id="price">
-                                    </div>
-                                </form>
+                                </div>
                             </div>
-                            
-                          </div>
+                            <div class="grid_input">
+                                <div class="input_wrap">
+                                    <label class="input_label" for="sup-el">Circulating Supply</label>
+                                    <div class="input_box">
+                                        <div class="symbol">
+                                            <span>>></span>
+                                        </div>
+                                        <input class="inputCalc" type="number" min="0" id="sup-el">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid_input">
+                                <div class="input_wrap">
+                                    <label class="input_label" id="priceSwitch" for="price">Price</label>
+                                    <div class="input_box">
+                                        <div class="symbol">
+                                            <span>$</span>
+                                        </div>
+                                        <input class="inputCalc" type="number" min="0" id="price" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="img">
                         <img id="b_img" src="assets/images/vector.png">
                     </div>
                     <div class="grad_box gradient">
-                        
+
                     </div>
-                   
+
                 </div>
             </div>
         </section>
@@ -91,7 +116,8 @@
 
 
     <script src="assets/js/script.js"></script>
-
+    <script src="https://kit.fontawesome.com/868033ccb5.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/868033ccb5.js" crossorigin="anonymous"></script>
+
+
 </html>
