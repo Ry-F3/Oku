@@ -6,15 +6,13 @@ let checkBox = document.getElementById("check"); // Checkbox to swtich labels
 
 let message = "";
 
-calcDivide()
+onload = (event) => {calcDivide()};
 
 function calcDivide() { // Calculate price per token
     
     //change name of function to division and remove top event listeners & add function for multiplication
     document.getElementById("cap-el").addEventListener('keyup', calcDivide); // Add event listeners to the input boxes
     document.getElementById("sup-el").addEventListener('keyup', calcDivide);
-
-    console.log("i am dividing");
 
     let inputCap = document.getElementById("cap-el").value;
     let inputSupply = document.getElementById("sup-el").value;
@@ -23,6 +21,7 @@ function calcDivide() { // Calculate price per token
     if (inputCap && inputSupply && price === 0) {
         console.log("No input");
     } else if (inputCap && inputSupply > price) {
+
         if (price > 1) {
             document.getElementById("price").value = price.toFixed(2); // If price greater than 1 only display 2 "0"s
         } else {
@@ -31,7 +30,7 @@ function calcDivide() { // Calculate price per token
     } else if (inputCap | inputSupply === 0) {
         document.getElementById("price").value = 0;
     } else {
-        console.log("Error")
+        console.log("Please input values");
     }
 
     // inputCap.toLocaleString("en-us");
@@ -44,11 +43,10 @@ function calcMultiply() {
   
   
     if (checkbox.checked === true) {
+
          //change name of function to division and remove top event listeners & add function for multiplication
         document.getElementById("cap-el").addEventListener('keyup', calcMultiply); // Add event listeners to the input boxes
         document.getElementById("sup-el").addEventListener('keyup', calcMultiply);
-
-        // console.log("i am multiplying");
 
         let inputCap = document.getElementById("cap-el").value;
         let inputSupply = document.getElementById("sup-el").value;
@@ -65,15 +63,18 @@ const checkbox = document.getElementById('check')
 
 
 function calcSwitch() {
+    
     if (checkbox.checked) {
         checkbox.checked = false;
-        capSwitch.innerHTML = "Market Cap"; // When unchecked revert back to the original html
+        capSwitch.innerHTML = "Market Cap"; // When unchecked revert back to the original html label
         priceSwitch.innerHTML = "Price";
+        console.log("I am dividing");
         valueReset();
     } else {
         checkbox.checked = true;
-        capSwitch.innerHTML = "Price"; // When clicked switch html for change in functionality
+        capSwitch.innerHTML = "Price"; // When clicked switch html label name for change in functionality
         priceSwitch.innerHTML = "Market Cap";
+        console.log("I am multiplying");
         valueReset();
         calcMultiply();
     }
@@ -92,11 +93,5 @@ function valueReset() { // Reset values of calculator back to default
 }
 
 
-
-
-
 //localStorage.setItem("price", price.toFixed(2));
 
-// let label = capSwitch.innerHTML;
-// console.log(label);
-// capSwitch.innerHTML = "<label>Price</label>";
