@@ -42,17 +42,22 @@ function calcDivide() { // Calculate price per token
 
 function calcMultiply() {
   
-    //change name of function to division and remove top event listeners & add function for multiplication
-    document.getElementById("cap-el").addEventListener('keyup', calcMultiply); // Add event listeners to the input boxes
-    document.getElementById("sup-el").addEventListener('keyup', calcMultiply);
-
-    console.log("i am multiplying");
-
-    let inputCap = document.getElementById("cap-el").value;
-    let inputSupply = document.getElementById("sup-el").value;
-    let price = inputCap * inputSupply;
-    document.getElementById("price").value = price;
   
+    if (checkbox.checked === true) {
+         //change name of function to division and remove top event listeners & add function for multiplication
+        document.getElementById("cap-el").addEventListener('keyup', calcMultiply); // Add event listeners to the input boxes
+        document.getElementById("sup-el").addEventListener('keyup', calcMultiply);
+
+        // console.log("i am multiplying");
+
+        let inputCap = document.getElementById("cap-el").value;
+        let inputSupply = document.getElementById("sup-el").value;
+        let price = inputCap * inputSupply;
+        document.getElementById("price").value = price;
+    } else {
+        return calcDivide();
+    }
+
 }
 
 
@@ -62,7 +67,9 @@ const checkbox = document.getElementById('check')
 function calcSwitch() {
     if (checkbox.checked) {
         checkbox.checked = false;
-        window.location.reload()
+        capSwitch.innerHTML = "Market Cap"; // When unchecked revert back to the original html
+        priceSwitch.innerHTML = "Price";
+        valueReset();
     } else {
         checkbox.checked = true;
         capSwitch.innerHTML = "Price"; // When clicked switch html for change in functionality
