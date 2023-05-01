@@ -88,7 +88,7 @@ function valueReset() { // Reset values of calculator back to default
 
     supEl.value = "";
     capEl.value = "";
-    price.value = "";
+    price.value = "0";
 
 }
 

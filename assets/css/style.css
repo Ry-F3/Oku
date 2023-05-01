@@ -159,7 +159,7 @@ div h1 {
 }
 
 div h2 {
-    font-size: 2em;
+    font-size: 1.24em;
     margin-bottom: 20px;
     color: #E7E5DF;
 }
@@ -213,7 +213,7 @@ div h3 {
 
 /* content inside calculator */
 
-.calc_nav {
+.calc_nav { /* small nav */
     width: 100%;
     height: 50px;
     border-radius: 26px;
@@ -222,13 +222,12 @@ div h3 {
 
 .btn_active {
     font-weight: 400;
-    padding: 15px;
+    padding: 25px;
     height: 35px;
     line-height: 0;
     border-radius: 24px;
     border-style: none;
-    /* border-style: groove; */
-    /* border: 1px solid #f8a229; */
+
     background-color: #f8a229;
     color: #E7E5DF;
     cursor: pointer;
@@ -245,7 +244,11 @@ div h3 {
     cursor: pointer;
 }
 
-#frame { /* video frame */
+.transition {
+    transition: all .5s ease-out;
+}
+
+#frame { /* video frame inside small nav */
     width: 70px;
     height: 30px;
     position: absolute;
@@ -273,29 +276,6 @@ div h3 {
     font-size: 30px;
     text-align: right;
 }
-/* 
-.grid_bottom {
-    padding: 20px;
-    text-align: left;
-    width: 100%;
-}
-
-form label {
-    font-size: 20px;
-    padding-right: 10px;
-    line-height: -80px;
-    color: #E7E5DF;
-}
-
-input {
-    width: 35%;
-    position: absolute;
-    border: none;
-    border-bottom: 1px solid #111d13;
-    background-color: transparent;
-    padding: 5px;
-    color: white;
-} */
 
 input:focus {
     outline: none;
@@ -385,4 +365,24 @@ input::-webkit-inner-spin-button {
     background-color: transparent;
     outline: none;
     border-style: none;
+}
+
+/* Information icon */
+
+.info_icon {
+    position: relative;
+    float: right;
+    /* border: 1px solid pink; */
+    padding: 10px;
+    margin-top: 8px;
+    margin-right: 155px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #6256F2;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.info_icon:hover {
+    transform: scale(1.2);
 }

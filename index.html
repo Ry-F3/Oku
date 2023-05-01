@@ -32,14 +32,15 @@
             <div class="row">
                 <div class="column Eblack content">
                     <div class="text_box">
-
-                        <h1 class="primary_font"><span id="pink">knowledge</span> is Power ...</h1>
-                        <h2 class="primary_font">Calculate real price targets</h2>
+                    
+                        <h1 class="primary_font"><span id="pink">knowledge</span> is Power ... <span id="arrow" class="info_icon"><i class="ri-questionnaire-line"></i></span></h1>
+                        <h2 class="primary_font">Calculate and seek obtainable price targets <br> for your digital assets !</h2>
                         <h3 class="secondary_font">
                             Welcome to our investment platform, where you can track your assets and set realistic price
-                            targets with ease. Boost your investing knowledge and take control of your portfolio today!
+                            targets with ease. Boost your investing knowledge and take control of your portfolio today
                         </h3>
                     </div>
+                    
                 </div>
 
                 <div class="circle Porange">
@@ -47,19 +48,19 @@
                 </div>
                 <div class="column content">
 
-                    <div class="box">
+                    <div id="hide_box" class="box">
                         <div class="grid_box secondary_font">
                             <div class="grid_top">
-                                <div class="calc_nav">
+                                <div id="nav_reset" class="calc_nav">
                                     <video id="frame" loop autoplay>
                                         <source src="assets/video/trading.mp4" type="video/mp4">
                                     </video>
-                                    <button class="btn_active">Oku Calc</button>
-                                    <button class="btn_click">Portfolio</button>
+                                    <button id="oku-calc" class="btn_active transition">Oku Calc</button>
+                                    <button id="portfolio" class="btn_click transition">Portfolio</button>
                                 </div>
                             </div>
                             <div class="grid_input">
-                                <div class="input_wrap">
+                                <div id="hide_box" class="input_wrap">
                                     <label class="input_label" id="capSwitch" for="cap-el">Market Cap</label>
                                     <div class="input_box">
                                         <div class="symbol">
@@ -105,9 +106,8 @@
                     <div class="img">
                         <img id="b_img" src="assets/images/vector.png">
                     </div>
-                    <div class="grad_box gradient">
-
-                    </div>
+                    <div class="grad_box gradient"></div>
+                   
 
                 </div>
             </div>
@@ -116,6 +116,7 @@
 
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/nav.js"></script>
     <script src="https://kit.fontawesome.com/868033ccb5.js" crossorigin="anonymous"></script>
 </body>
 
