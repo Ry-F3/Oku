@@ -211,7 +211,7 @@ div h3 {
     z-index: -11;
 }
 
-/* content inside calculator */
+/* content inside calculator tab */
 
 .calc_nav { /* small nav */
     width: 100%;
@@ -324,7 +324,7 @@ input::-webkit-inner-spin-button {
 }
 
 .symbol {
-    display: inline-block; 
+   
     background: #111d13;
     border-radius: 3px 0 0 3px;
     font-weight: 900;
@@ -367,12 +367,102 @@ input::-webkit-inner-spin-button {
     border-style: none;
 }
 
+/* Portfolio tab content  */
+
+select {
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    margin-left: 10px;
+    padding-left: 5px 5px;
+    cursor: pointer;
+}
+
+option {
+    background-color: #E7E5DF;
+}
+
+.arrow_icon {
+    
+}
+
+.inputBorder {
+ border: none;
+ margin-bottom: 10px;
+}
+
+.pInput {
+    height: 40px;
+    width: 180px;
+    padding: 8px;
+    padding-right: 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #ecd49e;
+    font-weight: 800;
+    text-align: right;
+
+}
+
+.assetBox {
+    width: 80px;
+    background-color: transparent;
+    color: #EC9EC1;
+    border: none;
+    outline: none;
+}
+
+
+.pSymbol {
+    display: flex;
+    background: #111d13;
+    border-radius: 3px;
+    float: right;
+    padding: 10px 15px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: 600;
+    color: #EC9EC1;
+    cursor: pointer;
+}
+
+
+.grid_input.portfolio {
+    display: none;
+    overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar { /* Scroll bar used from w3 pages */
+    width: 20px;
+    height: auto;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ec9ec1; 
+    border-radius: 10px;
+    margin-bottom: 65px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ec9ec162; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ec9ec193; 
+  }
+
 /* Information icon */
 
 .info_icon {
     position: relative;
     float: right;
-    /* border: 1px solid pink; */
     padding: 10px;
     margin-top: 8px;
     margin-right: 155px;
@@ -386,3 +476,4 @@ input::-webkit-inner-spin-button {
 .info_icon:hover {
     transform: scale(1.2);
 }
+

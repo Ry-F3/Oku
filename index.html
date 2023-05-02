@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/fav.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
     <title>Oku</title>
 </head>
 
@@ -55,11 +56,11 @@
                                     <video id="frame" loop autoplay>
                                         <source src="assets/video/trading.mp4" type="video/mp4">
                                     </video>
-                                    <button id="oku-calc" class="btn_active transition">Oku Calc</button>
-                                    <button id="portfolio" class="btn_click transition">Portfolio</button>
+                                    <button id="oku-calc" class="btn_active transition nav-button">Oku Calc</button>
+                                    <button id="portfolio" class="btn_click transition nav-button">Portfolio</button>
                                 </div>
                             </div>
-                            <div class="grid_input">
+                            <div class="grid_input oku-calc">
                                 <div id="hide_box" class="input_wrap">
                                     <label class="input_label" id="capSwitch" for="cap-el">Market Cap</label>
                                     <div class="input_box">
@@ -79,7 +80,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid_input">
+                            <div class="grid_input oku-calc">
                                 <div class="input_wrap">
                                     <label class="input_label" for="sup-el">Circulating Supply</label>
                                     <div class="input_box">
@@ -90,7 +91,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid_input">
+                            <div class="grid_input oku-calc">
                                 <div class="input_wrap">
                                     <label class="input_label" id="priceSwitch" for="price">Price</label>
                                     <div class="input_box">
@@ -99,6 +100,109 @@
                                         </div>
                                         <input class="inputCalc" type="number" min="0" value="0" id="price" disabled>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="grid_input portfolio">
+                                <div class="input_wrap">
+                                    <label class="input_label" for="asset-el">Assets</label>
+                                    <div class="input_box inputBorder">
+                                        <select class= "assetBox" name="assetType" id="Type">
+                                            <option value="Crypto">&#xf379;</option>
+                                            <option value="Stock">&#xf201;</option>
+                                            <option value="commodities">&#xf3a5;</option>
+                                            <option value="bussiness">&#xf0b1;</option>
+                                            <option value="fiat">&#xf19c;</option>
+                                            <option value="real-estate">&#xe00d;</option>
+                                        </select>
+                                        <span>
+                                            <input class="pInput" type="text" pattern="[0-9.,]+" placeholder="$0" name="amount" id="assets-el" required data-type="number" />
+                                        </span> 
+                                        <div class="pSymbol">
+                                            <span>X</span>
+                                        </div>
+                                    </div>
+                                    <div class="input_box inputBorder">
+                                        <select class= "assetBox" name="assetType" id="Type">
+                                            <option value="Crypto">&#xf379;</option>
+                                            <option value="Stock">&#xf201;</option>
+                                            <option value="commodities">&#xf3a5;</option>
+                                            <option value="bussiness">&#xf0b1;</option>
+                                            <option value="fiat">&#xf19c;</option>
+                                            <option value="real-estate">&#xe00d;</option>
+                                        </select>
+                                        <span class="arrow_icon"></span>
+                                        <span>
+                                            <input class="pInput" type="text" pattern="[0-9.,]+" placeholder="$0" name="amount" id="assets-el" required data-type="number" />
+                                        </span> 
+                                        <div class="pSymbol">
+                                            <span>X</span>
+                                        </div>
+                                    </div>
+                                    <div class="input_box inputBorder">
+                                        <select class= "assetBox" name="assetType" id="Type">
+                                            <option value="Crypto">&#xf379;</option>
+                                            <option value="Stock">&#xf201;</option>
+                                            <option value="commodities">&#xf3a5;</option>
+                                            <option value="bussiness">&#xf0b1;</option>
+                                            <option value="fiat">&#xf19c;</option>
+                                            <option value="real-estate">&#xe00d;</option>
+                                        </select>
+                                        <span>
+                                            <input class="pInput" type="text" pattern="[0-9.,]+" placeholder="$0" name="amount" id="assets-el" required data-type="number" />
+                                        </span> 
+                                        <div class="pSymbol">
+                                            <span>X</span>
+                                        </div>
+                                    </div>
+                                    <div class="input_box inputBorder">
+                                        <select class= "assetBox" name="assetType" id="Type">
+                                            <option value="Crypto">&#xf379;</option>
+                                            <option value="Stock">&#xf201;</option>
+                                            <option value="commodities">&#xf3a5;</option>
+                                            <option value="bussiness">&#xf0b1;</option>
+                                            <option value="fiat">&#xf19c;</option>
+                                            <option value="real-estate">&#xe00d;</option>
+                                        </select>
+                                        <span>
+                                            <input class="pInput" type="text" pattern="[0-9.,]+" placeholder="$0" name="amount" id="assets-el" required data-type="number" />
+                                        </span> 
+                                        <div class="pSymbol">
+                                            <span>X</span>
+                                        </div>
+                                    </div>
+                                    <div class="input_box inputBorder">
+                                        <select class= "assetBox" name="assetType" id="Type">
+                                            <option value="Crypto">&#xf379;</option>
+                                            <option value="Stock">&#xf201;</option>
+                                            <option value="commodities">&#xf3a5;</option>
+                                            <option value="bussiness">&#xf0b1;</option>
+                                            <option value="fiat">&#xf19c;</option>
+                                            <option value="real-estate">&#xe00d;</option>
+                                        </select>
+                                        <span>
+                                            <input class="pInput" type="text" pattern="[0-9.,]+" placeholder="$0" name="amount" id="assets-el" required data-type="number" />
+                                        </span> 
+                                        <div class="pSymbol">
+                                            <span>X</span>
+                                        </div>
+                                    </div>
+                                    <div class="input_box inputBorder">
+                                        <select class= "assetBox" name="assetType" id="Type">
+                                            <option value="Crypto">&#xf379;</option>
+                                            <option value="Stock">&#xf201;</option>
+                                            <option value="commodities">&#xf3a5;</option>
+                                            <option value="bussiness">&#xf0b1;</option>
+                                            <option value="fiat">&#xf19c;</option>
+                                            <option value="real-estate">&#xe00d;</option>
+                                        </select>
+                                        <span>
+                                            <input class="pInput" type="text" pattern="[0-9.,]+" placeholder="$0" name="amount" id="assets-el" required data-type="number" />
+                                        </span> 
+                                        <div class="pSymbol">
+                                            <span>X</span>
+                                        </div>
+                                    </div>
+                                
                                 </div>
                             </div>
                         </div>
