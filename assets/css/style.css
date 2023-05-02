@@ -375,14 +375,11 @@ select {
     margin-left: 10px;
     padding-left: 5px 5px;
     cursor: pointer;
+    position: relative;
 }
 
 option {
     background-color: #E7E5DF;
-}
-
-.arrow_icon {
-    
 }
 
 .inputBorder {
@@ -418,7 +415,6 @@ option {
     display: flex;
     background: #111d13;
     border-radius: 3px;
-    float: right;
     padding: 10px 15px;
     justify-content: center;
     text-align: center;
@@ -428,6 +424,37 @@ option {
     cursor: pointer;
 }
 
+.divide {
+    margin-bottom: 5px;
+}
+
+.plus {
+    display: flex;
+    background: #e7e5dfc5;
+    border-radius: 3px;
+    padding: 8px 15px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: 900;
+    color: #111d13;
+    cursor: pointer;
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+#net_worth {
+    background-color: transparent;
+    position: relative;
+    left: 2px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: right;
+    padding: 5px;
+    border-bottom: 1px solid #111d13;
+}
 
 .grid_input.portfolio {
     display: none;
