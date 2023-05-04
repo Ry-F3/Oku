@@ -345,3 +345,78 @@ const plusBtn = document.querySelectorAll("plus_btn");
     
 //         asset.classList.add("input_box", "inputBorder", "removeAsset");
 //         addAsset.appendChild(asset); 
+
+// calculations 
+
+const netWorth = document.getElementById("net_worth").value;
+let addTogether = document.querySelectorAll("#assets-el");
+ addTogether.forEach((input) => {
+      input.addEventListener('click', ()=>{
+        let sum = 0;
+        let num = document.getElementById("assets-el").value;
+        let numArray = [];
+        let size = 3;
+        console.log(numArray);
+
+
+        for (let i = 0; i < addTogether.length; i++){
+            numArray[i] = document.getElementById("assets-el").value + (i+1) ;
+        };
+    
+        console.log(sum);
+        console.log(numArray);
+
+      });
+ });
+
+
+  // document.getElementById("assets-el").addEventListener('keyup', addition);
+    
+    // function addition(){
+    //       console.log("adding");
+    //       let addTogether = document.getElementById("assets-el");
+    //       console.log(addTogether);
+    //  };
+
+
+     // console.log(numArray);
+
+            // for (let i = 0; i < addTogether.length; i++) {
+            //     addTogether[i] + (i);
+            //     // console.log(addTogether);
+
+            //     num.setAttribute("id", `inputAsset-${i}`);
+            //     console.log(num)
+            // }
+
+        
+
+
+
+
+                // for (let i = 0; i < addTogether.length; i++){
+                //     numArray[i] = document.getElementById("assets-el").value + (i) ;
+                // };
+
+                // console.log(sum);
+                // console.log(numArray);
+
+                let sum = 0;
+
+                //     let num = document.getElementById("inputAsset-");
+                    
+                //     let size = 3;
+                   
+        
+                //     let text = document.getElementById("inputAsset-");
+                //     const numArray = [];
+                //     numArray.forEach(myFunction);
+        
+        
+        
+                //     function myFunction(item, index) {
+                //         text += index + ": " + item + "<br>";
+                //     }
+        
+        
+                // })
