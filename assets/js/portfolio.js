@@ -72,14 +72,18 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
                <option value="fiat">&#xf19c;</option>
                <option value="real-estate">&#xe00d;</option>
            </select>
-           <span>
-               <input class="pInput" type="number" pattern="[0-9.,]+" placeholder="$0" name="amount" id="assets-el"/>
-           </span> 
            `;
 
         asset.classList.add("input_box", "inputBorder", "removeAsset"); // Add classes to the parent div for the main content
         addAsset.appendChild(asset);
 
+        let addInput = document.createElement("span");
+
+        addInput.innerHTML = `<input class="pInput" type="number" pattern="[0-9.,]+" placeholder="$0" name="amount" id="inputAsset-3"/>`;
+        asset.appendChild(addInput);
+        addInput.setAttribute("id", `inputAsset-${i}`);
+
+      
         let addSpan = document.createElement("div"); // Add the span close button separately in order to add targeted classes for the closeBtn function
 
         addSpan.innerHTML = `<span>X</span>`;
@@ -117,26 +121,37 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
     let addTogether = document.querySelectorAll("#inputAsset-");
     addTogether.forEach((input) => {
         input.addEventListener('keyup', function () {
-            const num1 = document.getElementById("inputAsset-0").value;
+            let num1 = document.getElementById("inputAsset-0").value;
             console.log(num1);
-            const num2 = document.getElementById("inputAsset-1").value;
+            let num2 = document.getElementById("inputAsset-1").value;
             console.log(num2);
-            const num3 = document.getElementById("inputAsset-2").value;
+            let num3 = document.getElementById("inputAsset-2").value;
             console.log(num3);
+            let num4 = document.getElementById("inputAsset-3").value;
+            console.log(num4);
             let sumTotal = document.getElementById("net_worth").value;
             sum = 0;
 
-            const myArray = [num1, num2, num3];
+            const myArray = [num1, num2, num3, num4];
 
             for(var i=0; i < myArray.length; i++){
 
                 sum += parseInt(myArray[i]);
+    
             };
 
             console.log(sum);
             
-            sumTotal.innerHTML = sum;
-            console.log(sumTotal);
+            equals()
+            function equals(){
+            if (sum > 1) {
+                console.log("Total Value");
+                document.getElementById("net_worth").value = sum.toFixed(2); 
+            } else {
+                console.log("no sum");
+            };
+          };
+  
 
        });
     });
