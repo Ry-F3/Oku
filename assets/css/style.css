@@ -551,7 +551,7 @@ option {
 
 @media only screen and (max-width: 1440px) {}
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1035px) {
     .row {
         flex-direction: column;
         display: flex;
@@ -680,7 +680,7 @@ option {
 
 @media only screen and (max-width: 703px) {}
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 660px) {
     nav {
         z-index: 20;
         position: relative;
@@ -734,15 +734,14 @@ option {
         width: 100%;
     }
 
-    .img {
-        width: 100%;
+    #b_img {
+        height: 100%;
     }
 
     .box {
         height: 550px;
         width: 350px;
         padding: 22px;
-        margin-top: -182px;
     }
 
     .pInput {
@@ -759,7 +758,7 @@ option {
     }
 
     #frame {
-        width: 55px;
+        width: 45px;
         height: 28px;
         /* position: absolute; */
         /* margin-top: 10px; */

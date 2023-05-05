@@ -127,12 +127,10 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
             console.log(num2);
             let num3 = document.getElementById("inputAsset-2").value;
             console.log(num3);
-            let num4 = document.getElementById("inputAsset-3").value;
-            console.log(num4);
             let sumTotal = document.getElementById("net_worth").value;
             sum = 0;
 
-            const myArray = [num1, num2, num3, num4];
+            const myArray = [num1, num2, num3];
 
             for(var i=0; i < myArray.length; i++){
 
