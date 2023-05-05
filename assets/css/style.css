@@ -214,7 +214,8 @@ div h3 {
 
 /* content inside calculator tab */
 
-.calc_nav { /* small nav */
+.calc_nav {
+    /* small nav */
     width: 100%;
     height: 50px;
     border-radius: 26px;
@@ -248,10 +249,11 @@ div h3 {
     transition: all .5s ease-out;
 }
 
-#frame { /* video frame inside small nav */
+#frame {
+    /* video frame inside small nav */
     width: 70px;
     height: 30px;
-    position: fixed;
+    position: absolute;
     /* left: 50px; */
     margin-top: 10px;
     margin-left: -80px;
@@ -283,9 +285,9 @@ input:focus {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-} 
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 .input_wrap {
     width: 90px;
@@ -324,7 +326,7 @@ input::-webkit-inner-spin-button {
 }
 
 .symbol {
-   
+
     background: #111d13;
     border-radius: 3px 0 0 3px;
     font-weight: 900;
@@ -343,15 +345,9 @@ input::-webkit-inner-spin-button {
     padding: 20px;
 }
 
-.grid_input2 {
-    
-    padding: 20px 50px 20px 90px;
-
-}
-
 #switch {
     font-size: 30px;
-    position: fixed;
+    position: absolute;
     cursor: pointer;
 }
 
@@ -389,8 +385,8 @@ option {
 }
 
 .inputBorder {
- border: none;
- margin-bottom: 10px;
+    border: none;
+    margin-bottom: 10px;
 }
 
 .inputBorder_2 {
@@ -401,7 +397,7 @@ option {
     padding: 15px;
     right: -21px;
     position: relative;
-   }
+}
 
 .pInput {
     height: 40px;
@@ -457,7 +453,7 @@ option {
     cursor: pointer;
     float: right;
     font-size: 20px;
-    
+
 }
 
 #net_worth {
@@ -490,7 +486,7 @@ option {
     float: right;
     font-size: 20px;
     margin-right: 10px;
-   
+
 }
 
 #submit:hover {
@@ -508,28 +504,29 @@ option {
 }
 
 /* width */
-::-webkit-scrollbar { /* Scroll bar used from w3 pages */
+::-webkit-scrollbar {
+    /* Scroll bar used from w3 pages */
     width: 20px;
     height: auto;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #ec9ec1; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ec9ec1;
     border-radius: 10px;
     margin-bottom: 65px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #ec9ec162; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ec9ec162;
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #ec9ec193; 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ec9ec193;
+}
 
 /* Information icon */
 
@@ -550,9 +547,7 @@ option {
     transform: scale(1.2);
 }
 
-@media only screen and (max-width: 1440px) {
-
-}
+@media only screen and (max-width: 1440px) {}
 
 @media only screen and (max-width: 920px) {
     .row {
@@ -601,16 +596,16 @@ option {
     }
 
     .circle {
-    height: 200px;
-    width: 200px;
-    top: 0%;
-    left: 0;
-    z-index: 10;
-    border-radius: 50%;
-    border: none;
-    background-color: #6256f2;
+        height: 200px;
+        width: 200px;
+        top: 0%;
+        left: 0;
+        z-index: 10;
+        border-radius: 50%;
+        border: none;
+        background-color: #6256f2;
     }
-    
+
     .abs {
         display: none;
     }
@@ -629,14 +624,30 @@ option {
         padding: 60px;
     }
 
+    .grid_input2 {
+        padding: 20px 50px 20px 90px;
+
+    }
+
     .grid_input.portfolio {
         padding: 20px 20px 20px 90px;
     }
- 
+
+    #frame {
+        width: 70px;
+        height: 27px;
+        /* position: absolute; */
+        /* margin-top: 10px; */
+        /* margin-left: -64px; */
+        border-radius: 36px;
+
+
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
- 
+
     .text_box {
         width: 55vw;
     }
@@ -649,7 +660,7 @@ option {
         font-size: 69px;
     }
 
-   
+
     .abs {
         font-size: 70px;
     }
@@ -661,18 +672,11 @@ option {
     .img {
         width: 100%;
     }
- 
-}
-
-@media only screen and (max-width: 703px) {
 
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 703px) {}
 
-}
+@media only screen and (max-width: 414px) {}
 
-@media only screen and (max-width: 320px) {
-
-}
-
+@media only screen and (max-width: 320px) {}
