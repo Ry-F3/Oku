@@ -624,6 +624,7 @@ option {
         height: 800px;
         width: 600px;
         padding: 60px;
+        margin-top: 0;
     }
 
     .grid_input2 {
@@ -679,6 +680,99 @@ option {
 
 @media only screen and (max-width: 703px) {}
 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 414px) {
+    nav {
+        z-index: 20;
+        position: relative;
+    }
+
+    nav ul {
+        padding: 4px;
+    }
+
+    .c_btn {
+        font-size: 17px;
+    }
+
+    .text_box {
+        width: 68vw;
+    }
+
+    div h1 {
+        font-size: 3em;
+    }
+
+    .info_icon {
+        position: relative;
+        float: right;
+        padding: 0;
+        margin-top: 6px;
+        margin-right: 13px;
+        font-size: 79px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .circle {
+        height: 200px;
+        width: 200px;
+        top: 0%;
+        left: 0;
+        z-index: 10;
+        border-radius: 50%;
+        border: none;
+        background-color: #6256f2;
+    }
+
+    .abs {
+        display: none;
+    }
+
+    .grad_box {
+        width: 100%;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .box {
+        height: 550px;
+        width: 350px;
+        padding: 22px;
+        margin-top: -182px;
+    }
+
+    .pInput {
+        width: 168px;
+    }
+
+    .grid_input2 {
+        padding: 15px;
+
+    }
+
+    .grid_input.portfolio {
+        padding: 0;
+    }
+
+    #frame {
+        width: 55px;
+        height: 28px;
+        /* position: absolute; */
+        /* margin-top: 10px; */
+        /* margin-left: -64px; */
+        border-radius: 36px;
+        left: 140px;
+    }
+
+    #net_worth {
+        margin-right: -27px;
+        left: -21px
+    }
+
+}
 
 @media only screen and (max-width: 320px) {}
