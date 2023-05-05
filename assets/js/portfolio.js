@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () { //DOM loads content with a running function to avoid latency and rendering time for the user
     let addAsset = document.getElementById("asset"); // Selecting the div with an Id of "asset"
+    let idIndex = 0;
 
-    for (let i = 0; i < 10; i++) { // Running a for loop to input a unique id "${i}" for the HTML Content
-        addAsset.innerHTML = `  
-            <label class="input_label" for="asset-el">Assets</label>    
+    addAsset.innerHTML = `<label class="input_label" for="asset-el">Assets</label> `;
+    for (let i = 0; i < 3; i++) { // Running a for loop to input a unique id "${i}" for the HTML Content
+        addAsset.innerHTML += `  
             <div id="asset-${i}" class="input_box inputBorder removeAsset">
                 <select class= "assetBox" name="assetType" id="Type">
                     <option value="Crypto">&#xf379;</option>
@@ -14,44 +15,14 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
                     <option value="real-estate">&#xe00d;</option>
                 </select>
                 <span>
-                    <input class="pInput" type="number" pattern="[0-9.,]+" placeholder="$0" name="amount" id="inputAsset-"/>
+                    <input class="pInput" type="number" pattern="[0-9.,]+" placeholder="$0" name="amount" id="inputAsset-${i}" value="0"/>
                 </span> 
-                <div class="pSymbol close">
-                    <span>X</span>
+                <div class="pSymbol">
+                    <span class="close">X</span>
                 </div>
-            </div>
-        <div id="asset-${i}" class="input_box inputBorder removeAsset">
-            <select class= "assetBox" name="assetType" id="Type">
-                <option value="Crypto">&#xf379;</option>
-                <option value="Stock">&#xf201;</option>
-                <option value="commodities">&#xf3a5;</option>
-                <option value="bussiness">&#xf0b1;</option>
-                <option value="fiat">&#xf19c;</option>
-                <option value="real-estate">&#xe00d;</option>
-            </select>
-            <span>
-                <input class="pInput" type="number" pattern="[0-9.,]+" placeholder="$0" name="amount" id="inputAsset-"/>
-            </span> 
-            <div class="pSymbol close">
-                <span>X</span>
-            </div>
-        </div>
-        <div id="asset-${i}" class="input_box inputBorder removeAsset">
-            <select class= "assetBox" name="assetType" id="Type">
-                <option value="Crypto">&#xf379;</option>
-                <option value="Stock">&#xf201;</option>
-                <option value="commodities">&#xf3a5;</option>
-                <option value="bussiness">&#xf0b1;</option>
-                <option value="fiat">&#xf19c;</option>
-                <option value="real-estate">&#xe00d;</option>
-            </select>
-            <span>
-                <input class="pInput" type="number" pattern="[0-9.,]+" placeholder="$0" name="amount" id="inputAsset-"/>
-            </span> 
-            <div class="pSymbol close">
-                <span>X</span>
-            </div>
-        </div>`;
+            </div>`;
+        idIndex = idIndex +1;
+    
     };
 
     // Add button
@@ -79,89 +50,79 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
 
         let addInput = document.createElement("span");
 
-        addInput.innerHTML = `<input class="pInput" type="number" pattern="[0-9.,]+" placeholder="$0" name="amount" id="inputAsset-3"/>`;
+        addInput.innerHTML = `<input class="pInput" type="number" value="0" pattern="[0-9.,]+" placeholder="$0" name="amount" id="inputAsset-${idIndex}"/>`;
         asset.appendChild(addInput);
-        addInput.setAttribute("id", `inputAsset-${i}`);
+        idIndex = idIndex + 1;
+        // addInput.setAttribute("id", `inputAsset-${i}`);
 
       
         let addSpan = document.createElement("div"); // Add the span close button separately in order to add targeted classes for the closeBtn function
 
-        addSpan.innerHTML = `<span>X</span>`;
-        addSpan.classList.add("pSymbol", "close");
+        addSpan.innerHTML = `<span class="close">X</span>`;
+        addSpan.classList.add("pSymbol");
         asset.appendChild(addSpan);
+        updateNetWorth();
+        updateListeners();
+        updateCloseListeners()
+    });
 
-        for (let i = 0; i < 10; i++) {
-            asset.setAttribute("id", `asset-${i}`); // For loop adds unique id "${i}" for the user created HTML Content
-        };
+    function deleteInput(btn){
+        btn.parentElement.parentElement.remove();
+        console.log("click delete");
+        updateNetWorth();
+        updateListeners();
+    }
+    function deleteInputDiv(btn){
+        btn.parentElement.remove();
+        console.log("click delete");
+        updateNetWorth();
+        updateListeners();
+    }
 
-        // Close button
 
-        const closeBtn = document.querySelectorAll(".close") // The querySelectorAll targets each class with the name "close"
+    function updateCloseListeners(){
+        const closeBtn = document.querySelectorAll(".close"); // Repeated code block targeting the original HTML when the DOM loads on start
         closeBtn.forEach((btn) => {
-            btn.addEventListener('click', () => {
-                btn.parentElement.style.display = "none";
-                console.log("click delete");
+            btn.removeEventListener('click', (event)=>{
+                deleteInput(event.target);
+            });
+            btn.addEventListener('click', (event)=>{
+                deleteInput(event.target);
             });
         });
-
-    });
-
-
-    const closeBtn = document.querySelectorAll(".close") // Repeated code block targeting the original HTML when the DOM loads on start
-    closeBtn.forEach((btn) => {
-        btn.addEventListener('click', () => {
-            btn.parentElement.style.display = "none";
-            console.log("click delete");
+        const closeDiv = document.querySelectorAll(".pSymbol"); // Repeated code block targeting the original HTML when the DOM loads on start
+        closeDiv.forEach((btn) => {
+            btn.removeEventListener('click', (event)=>{
+                deleteInputDiv(event.target);
+            });
+            btn.addEventListener('click', (event)=>{
+                deleteInputDiv(event.target);
+            });
         });
-    });
+    }
 
+    function updateNetWorth(){
+        let netWorth = 0;
+        let addTogether = document.querySelectorAll("input.pInput");
+        addTogether.forEach((input) => {
+            console.info(`input.value ${input.value}`);
+            netWorth = netWorth + parseInt(input.value);
+        });
+        document.getElementById("net_worth").value = netWorth;
+    }
 
-
-    const netWorth = document.getElementById("net_worth").value; // Function that finds the total value of the users assets by storing the values in an array
-    let addTogether = document.querySelectorAll("#inputAsset-");
-    addTogether.forEach((input) => {
-        input.addEventListener('keyup', function () {
-            let num1 = document.getElementById("inputAsset-0").value;
-            console.log(num1);
-            let num2 = document.getElementById("inputAsset-1").value;
-            console.log(num2);
-            let num3 = document.getElementById("inputAsset-2").value;
-            console.log(num3);
-            let sumTotal = document.getElementById("net_worth").value;
-            sum = 0;
-
-            const myArray = [num1, num2, num3];
-
-            for(var i=0; i < myArray.length; i++){
-
-                sum += parseInt(myArray[i]);
-    
-            };
-
-            console.log(sum);
-            
-            equals()
-            function equals(){
-            if (sum > 1) {
-                console.log("Total Value");
-                document.getElementById("net_worth").value = sum.toFixed(2); 
-            } else {
-                console.log("no sum");
-            };
-          };
-  
-
-       });
-    });
-
-    
-    for (var i = 0; i < addTogether.length; i++) {
-        addTogether[i].setAttribute("id", `inputAsset-${i}`); // For loop that gives the input boxes unique Id codes in order to sum the values
-        console.log(addTogether);
-    };
-
-
-
+    function updateListeners(){
+        let addTogether = document.querySelectorAll("input.pInput");
+        addTogether.forEach((input) => {
+            input.removeEventListener('change', updateNetWorth);
+            input.removeEventListener('keyup', updateNetWorth);
+            input.addEventListener('change', updateNetWorth);
+            input.addEventListener('keyup', updateNetWorth);
+        });
+        
+    }
+    updateListeners();
+    updateCloseListeners();
 
 });
 
