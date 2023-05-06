@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () { //DOM loads content with a running function to avoid latency and rendering time for the user
     let addAsset = document.getElementById("asset"); // Selecting the div with an Id of "asset"
-    let idIndex = 0;
+    let idIndex = 0; // Value of id specific index
 
     addAsset.innerHTML = `<label class="input_label" for="asset-el">Assets</label> `;
     for (let i = 0; i < 3; i++) { // Running a for loop to input a unique id "${i}" for the HTML Content
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
                     <span class="close">X</span>
                 </div>
             </div>`;
-        idIndex = idIndex +1;
+        idIndex = idIndex +1; // Increment idIndex for the loop to display the HTML * 3
     
     };
 
@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
 
         addInput.innerHTML = `<input class="pInput" type="number" value="0" pattern="[0-9.,]+" placeholder="$0" name="amount" id="inputAsset-${idIndex}"/>`;
         asset.appendChild(addInput);
-        idIndex = idIndex + 1;
-        // addInput.setAttribute("id", `inputAsset-${i}`);
+        idIndex = idIndex + 1; // Increment idIndex for the newly created HTML called when the add button is pressed
+        
 
       
         let addSpan = document.createElement("div"); // Add the span close button separately in order to add targeted classes for the closeBtn function
@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
         updateCloseListeners()
     });
 
-    function deleteInput(btn){
-        btn.parentElement.parentElement.remove();
+    function deleteInput(btn){ // Delete input boxes
+        btn.parentElement.parentElement.remove(); // Remove parent of the parent
         console.log("click delete");
         updateNetWorth();
         updateListeners();
     }
-    function deleteInputDiv(btn){
+    function deleteInputDiv(btn){ // Delete input box and btn div
         btn.parentElement.remove();
         console.log("click delete");
         updateNetWorth();
@@ -83,29 +83,30 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
     function updateCloseListeners(){
         const closeBtn = document.querySelectorAll(".close"); // Repeated code block targeting the original HTML when the DOM loads on start
         closeBtn.forEach((btn) => {
-            btn.removeEventListener('click', (event)=>{
+            btn.removeEventListener('click', (event)=>{ // Event target 
                 deleteInput(event.target);
             });
-            btn.addEventListener('click', (event)=>{
+            btn.addEventListener('click', (event)=>{ // Event target 
                 deleteInput(event.target);
             });
         });
         const closeDiv = document.querySelectorAll(".pSymbol"); // Repeated code block targeting the original HTML when the DOM loads on start
         closeDiv.forEach((btn) => {
-            btn.removeEventListener('click', (event)=>{
+            btn.removeEventListener('click', (event)=>{ // Event target 
                 deleteInputDiv(event.target);
             });
-            btn.addEventListener('click', (event)=>{
+            btn.addEventListener('click', (event)=>{ // Event target 
                 deleteInputDiv(event.target);
             });
         });
     }
 
+    // Portfolio calculations
     function updateNetWorth(){
         let netWorth = 0;
         let addTogether = document.querySelectorAll("input.pInput");
         addTogether.forEach((input) => {
-            console.info(`input.value ${input.value}`);
+            console.info(`input.value ${input.value}`); // Console log user input value information
             netWorth = netWorth + parseInt(input.value);
         });
         document.getElementById("net_worth").value = netWorth;
@@ -114,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
     function updateListeners(){
         let addTogether = document.querySelectorAll("input.pInput");
         addTogether.forEach((input) => {
-            input.removeEventListener('change', updateNetWorth);
+            input.removeEventListener('change', updateNetWorth); // Update listeners, which loop with the HTML content being created and delted
             input.removeEventListener('keyup', updateNetWorth);
             input.addEventListener('change', updateNetWorth);
             input.addEventListener('keyup', updateNetWorth);
@@ -126,4 +127,3 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
 
 });
 
-// Portfolio calculations
