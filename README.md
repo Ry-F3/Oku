@@ -8,7 +8,9 @@
 
 ![Index page screenshot]()
 
+
 ## **Background**
+
 
 Project Oku is a crypto calculator designed to address the needs of traders in the cryptocurrency market. It aims to provide users with the tools to evaluate price targets and calculate the value of their assets. This readme file serves as a guide to understanding the purpose and functionality of Project Oku.
 
@@ -37,8 +39,8 @@ Oku also offers a feature that allows users to input their assets and calculate 
 Oku provides a valuable tool for traders in the cryptocurrency market by offering a comprehensive calculator for price targets and asset value calculations. By considering factors such as circulating supply and market capitalization, users can set realistic price targets and make informed investment decisions. Project Oku empowers users to engage in quantitative analysis, enhance their understanding of cryptocurrency investments, and effectively manage their portfolios.
 
 
-
 ## **Scope**
+
 
 **User Interface:** <br> The calculator will have a user-friendly interface where users can input relevant data such as circulating supply, market capitalization, and desired price targets. A well-designed interface will enhance user experience and ease of data input.
 
@@ -73,11 +75,27 @@ By considering these factors and implementing the necessary functionalities, the
 Whether they are experienced traders, long-term investors, crypto enthusiasts, newcomers to the crypto world, or developers seeking to expand their knowledge, Oku provides a valuable tool for enhancing understanding, evaluating price targets, and making informed decisions in the dynamic cryptocurrency market.
 
 
-
-
 ## **User Stories**
 
 
+**Key points on how I can use Oku:**
+
+1. As I log into Oku, I am greeted with a clean and intuitive interface.
+
+2. I input the circulating supply and market capitalization of the cryptocurrency I am interested in.
+Oku instantly calculates the corresponding price based on the provided data.
+
+3. I can evaluate the feasibility of my desired price target by comparing it with the current market conditions and the cryptocurrency's fundamentals.
+
+4. If needed, I can adjust the input values to explore different scenarios and understand the impact on the price calculation.
+
+5. Oku also provides a color chart probability counter that visually represents the likelihood of achieving the desired price target. This feature adds an additional layer of analysis, allowing me to gauge the probability of success based on the inputted values. (This is an intention but depends on the development process for the project on its feasibility).
+
+6. Additionally, Oku provides a feature that allows me to calculate the value of my cryptocurrency assets. I can input the quantity of each cryptocurrency I hold, and the calculator determines their total value based on current prices.
+
+7. I can also consider the market dynamics and fundamentals suggested by Oku while setting realistic price targets and making investment decisions.
+
+8. Oku ensures that I have a quantitative analysis tool at my disposal, empowering me to make more informed decisions in the volatile cryptocurrency market.
 
 
 ## **Wireframes**
