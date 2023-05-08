@@ -552,16 +552,8 @@ option {
     .box2 {
         width: 100%;
         overflow: hidden;
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* margin-top: 40px; */
         height: 500px;
-        /* padding: 15px 10px 40px 50px; */
-        /* border: 1px solid black; */
-        /* overflow-y: scroll; */
-        /* overflow-y: scroll; */
         position: absolute;
-        /* right: 55px; */
         z-index: -20;
     }
 
@@ -573,6 +565,12 @@ option {
     }
 }
 
+
+@media (max-width: 390px) {
+    .box {
+        right: 23px;
+    }
+}
 
 
 
