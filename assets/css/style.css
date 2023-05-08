@@ -84,6 +84,10 @@ nav ul li a {
 
 }
 
+#frame {
+    width: 537px;
+}
+
 .row {
     display: -webkit-flex;
     display: flex;
@@ -132,7 +136,7 @@ div h3 {
 /* Bar */
 
 .bar {
-    width: 478px;
+    width: 40vw;
     height: 38px;
     border: 2px solid rgb(199, 199, 199);
     position: relative;
@@ -323,6 +327,7 @@ input::-webkit-inner-spin-button {
     border: none;
     outline: none;
     height: 32px;
+    /* font-weight: 600; */
     border-radius: 0 3px 3px 0;
     background-color: #e7e5df;
 }
@@ -338,7 +343,7 @@ input::-webkit-inner-spin-button {
 
 .inputBorder {
     border-bottom: none; 
-    margin: 5px;   
+    margin: 10px;   
 }  
 
 .assetBox {
