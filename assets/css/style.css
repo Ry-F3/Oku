@@ -138,7 +138,7 @@ div h3 {
     /* border: 1px solid red; */
     position: absolute;
     bottom: 0;
-    
+
 }
 
 .bar {
@@ -154,17 +154,17 @@ div h3 {
 }
 
 .likely {
-   width: 75%;
-   height: 48px;
-   background: #ffad63;
-   display: none;
+    width: 75%;
+    height: 48px;
+    background: #ffad63;
+    display: none;
 }
 
 .maybe {
-   width: 50%;
-   height: 48px;
-   background: #ffad63;
-   display: none;
+    width: 50%;
+    height: 48px;
+    background: #ffad63;
+    display: none;
 }
 
 .unlikely {
@@ -208,8 +208,8 @@ div h3 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background:  #E7E5DF;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.062); 
+    background: #E7E5DF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.062);
 }
 
 .calc_nav {
@@ -331,7 +331,8 @@ input::-webkit-inner-spin-button {
     padding: 20px;
 }
 
-.pInput { /* Portfolio input box */
+.pInput {
+    /* Portfolio input box */
     padding: 5px;
     border: none;
     outline: none;
@@ -351,9 +352,9 @@ input::-webkit-inner-spin-button {
 }
 
 .inputBorder {
-    border-bottom: none; 
-    margin: 10px;   
-}  
+    border-bottom: none;
+    margin: 10px;
+}
 
 .assetBox {
     width: 80px;
@@ -441,7 +442,8 @@ option {
 
 }
 
-.pSymbol { /* Close btn */
+.pSymbol {
+    /* Close btn */
     background: #e7e5df;
     border-radius: 3px;
     padding: 5px 10px;
@@ -491,11 +493,11 @@ option {
     }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 440px) {
     .text_box {
         margin-left: auto;
         margin-right: auto;
-        width: 60vw;
+        width: 306px;
         top: 50px;
         position: relative;
     }
@@ -505,15 +507,16 @@ option {
     }
 
     div h2 {
-       font-size: 1em; 
+        font-size: 1em;
     }
 
     .box {
         width: 366px;
+        margin-top: 70px;
     }
 
-    .bar_box{
-        width: 50%;
+    .bar_box {
+        width: 90%;
         height: 56px;
         /* border: 1px solid red; */
         position: absolute;
@@ -521,7 +524,7 @@ option {
     }
 
     .bar {
-        width: 80%;
+        width: 100%;
         height: 38px;
         border: 2px solid rgb(199, 199, 199);
         position: relative;
@@ -532,11 +535,10 @@ option {
 
     .calc_nav {
         width: 100%;
-       
+
+    }
+
+    .grid_input {
+        padding: 10px;
     }
 }
-
-
-
-
-
