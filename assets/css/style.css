@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    background-color: #0d0d0d;
 }
 
 /* color chart */
@@ -95,7 +96,7 @@ nav ul li a {
     -ms-flex: 1;
     flex: 1;
     padding: 10px;
-    min-height: 100vh;
+    min-height: auto;
 }
 
 /* column 1 */
@@ -131,14 +132,25 @@ div h3 {
 
 /* Bar */
 
+.bar_box {
+    width: 50%;
+    height: 150px;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0;
+    
+}
+
 .bar {
-    width: 40vw;
+    width: 80%;
     height: 38px;
     border: 2px solid rgb(199, 199, 199);
     position: relative;
-    bottom: -61px;
     border-radius: 6px;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .likely {
@@ -476,6 +488,42 @@ option {
     .row {
         -webkit-flex-direction: column;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 890px) {
+    .text_box {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60vw;
+        top: 50px;
+        position: relative;
+    }
+
+    div h1 {
+        font-size: 2em;
+    }
+
+    div h2 {
+       font-size: 1em; 
+    }
+
+    .bar_box {
+        width: 50%;
+    height: 200px;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 25%;
+    }
+
+    .box {
+        position: absolute;
+        left: -2%;
+        top: 77%;
     }
 }
 
