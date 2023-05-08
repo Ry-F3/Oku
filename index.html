@@ -13,84 +13,83 @@
 
 <body>
     <main>
-        <header>
-            <nav class="primary_font">
+        <div class="header">
+            <nav class="primary_font light_black">
                 <ul>
                     <li>
                         <a href="#" class="logo">Oku.</a>
                     </li>
                 </ul>
-                
+
                 <ul>
                     <li>
-                        <a href="#" class="c_btn">Contact</a>
+                        <!-- <a href="#" class="c_btn">Contact</a> -->
                     </li>
                 </ul>
             </nav>
-        </header>
-        <section>
+        </div>
+
+        <section class="black">
             <div class="row">
-                <div class="column Eblack content">
+                <div class="column">
                     <div class="text_box">
-                    
-                        <h1 class="primary_font"><span id="pink">knowledge</span> is Power ... <span id="arrow" class="info_icon"><i class="ri-questionnaire-line"></i></span></h1>
-                        <h2 class="primary_font">Calculate and seek obtainable price targets <br> for your digital assets !</h2>
-                        <h3 class="secondary_font">
-                            Welcome to our investment platform, where you can track your assets and set realistic price
-                            targets with ease. Boost your investing knowledge and take control of your portfolio today
-                        </h3>
+                        <h1 class="primary_font">Calculate Realistic Price Targets</h1>
+                        <h2 class="primary_font">Discover the Educational Frontier of digital<br> currencies for
+                            Financial Empowerment.</h2>
+                    <div class="bar">
+                        <div id="likely" class="likely"></div>
+                        <div id="maybe" class="maybe"></div>
+                        <div id="unlikely" class="unlikely"></div>
                     </div>
-                    
+                    </div>
                 </div>
 
-                <div class="circle Porange">
-                    <i class="abs ri-bar-chart-line"></i>
-                </div>
-                <div class="column content">
-
+                <div class="column">
                     <div id="hide_box" class="box">
                         <div class="grid_box secondary_font">
                             <div class="grid_top">
                                 <div id="nav_reset" class="calc_nav">
-                                    <video id="frame" loop autoplay>
-                                        <source src="assets/video/trading.mp4" type="video/mp4">
-                                    </video>
+                                    <!-- <video id="frame" loop autoplay>
+                                            <source src="assets/video/trading.mp4" type="video/mp4">
+                                        </video> -->
                                     <button id="oku-calc" class="btn_active transition nav-button">Oku Calc</button>
                                     <button id="portfolio" class="btn_click transition nav-button">Portfolio</button>
                                 </div>
                             </div>
-                            <div class="grid_input grid_input2 oku-calc">
+                            <div class="grid_input oku-calc">
                                 <div id="hide_box" class="input_wrap">
                                     <label class="input_label" id="capSwitch" for="cap-el">Market Cap</label>
                                     <div class="input_box">
                                         <div class="symbol">
                                             <span>$</span>
                                         </div>
-                                        <input class="inputCalc" type="number" min="0" max="1,000,000,000,000,000" id="cap-el">
+                                        <input class="inputCalc" type="number" min="0" max="1,000,000,000,000,000"
+                                            id="cap-el">
                                         <div>
                                             <span>
                                                 <button id="switch" class="btn">
                                                     <i class="ri-arrow-up-down-line"></i>
                                                 </button>
 
-                                                <input id="check" type= "checkbox">
+                                                <input id="check" type="checkbox">
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid_input grid_input2 oku-calc">
+                            <div class="grid_input oku-calc">
                                 <div class="input_wrap">
                                     <label class="input_label" for="sup-el">Circulating Supply</label>
                                     <div class="input_box">
                                         <div class="symbol">
                                             <span>>></span>
                                         </div>
-                                        <input class="inputCalc" type="number" min="0" max="1,000,000,000,000,000" id="sup-el">
+                                        <input class="inputCalc" type="number" min="0" max="1,000,000,000,000,000"
+                                            id="sup-el">
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid_input grid_input2 oku-calc">
+                            <div class="grid_input oku-calc">
                                 <div class="input_wrap">
                                     <label class="input_label" id="priceSwitch" for="price">Price</label>
                                     <div class="input_box">
@@ -104,29 +103,28 @@
 
                             <div class="grid_input portfolio">
                                 <div id="asset" class="input_wrap"></div>
-                                <div class="input_box inputBorder_2">
-                                    
+                                <div class="input_box inputBorder inputBorder_2">
+
                                     <input id="net_worth" type="number" value="0" disabled>
                                     <div id="submit_btn" class="submit_style">
                                         <span id="submit">=</span>
                                     </div>
                                     <div>
-                                        <span class="plus"  id="plus_btn"><strong class="scale">+</strong></span>
+                                        <span class="plus" id="plus_btn"><strong class="scale">+</strong></span>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        
+
                     </div>
-                    <div class="img">
-                        <img id="b_img" src="assets/images/vector.png">
-                    </div>
-                    <div class="grad_box gradient"></div>
                 </div>
-            </div>
-            <!-- <footer>RHys Few</footer> -->
         </section>
+
+        <div class="footer black secondary_font">
+            <p>Rhys Few</p>
+        </div>
+
     </main>
 
 

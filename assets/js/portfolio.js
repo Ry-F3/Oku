@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
     let addAsset = document.getElementById("asset"); // Selecting the div with an Id of "asset"
     let idIndex = 0; // Value of id specific index
 
-    addAsset.innerHTML = `<label class="input_label" for="asset-el">Assets</label> `;
+    addAsset.innerHTML = `<label class="input_label_p" for="asset-el">Assets</label> `;
     for (let i = 0; i < 3; i++) { // Running a for loop to input a unique id "${i}" for the HTML Content
         addAsset.innerHTML += `  
             <div id="asset-${i}" class="input_box inputBorder removeAsset">

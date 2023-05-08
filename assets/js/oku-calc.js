@@ -1,23 +1,28 @@
-
 document.getElementById("switch").addEventListener('click', calcSwitch); // Add event listeners for calculator switch function
 let capSwitch = document.getElementById("capSwitch"); // Switching labels
 let priceSwitch = document.getElementById("priceSwitch"); //Switching labels
 let checkBox = document.getElementById("check"); // Checkbox to swtich labels
 
 let message = "";
+let price = 0;
+let inputCap = 0;
+let inputSupply = 0;
 
-onload = (event) => {calcDivide()};
+onload = (event) => {
+    calcDivide()
+};
 
 function calcDivide() { // Calculate price per token
-    
+
     //change name of function to division and remove top event listeners & add function for multiplication
     document.getElementById("cap-el").addEventListener('keyup', calcDivide); // Add event listeners to the input boxes
     document.getElementById("sup-el").addEventListener('keyup', calcDivide);
+    document.getElementById("cap-el").addEventListener('keyup', probability);
 
     let inputCap = document.getElementById("cap-el").value;
     let inputSupply = document.getElementById("sup-el").value;
     let price = inputCap / inputSupply;
-  
+
     if (inputCap && inputSupply && price === 0) {
         console.log("No input");
     } else if (inputCap && inputSupply > price) {
@@ -31,20 +36,48 @@ function calcDivide() { // Calculate price per token
         document.getElementById("price").value = 0;
     } else {
         console.log("Please input values");
-    }
+    };
 
     // inputCap.toLocaleString("en-us");
     // console.log(inputCap.toLocaleString("en-us"))
     // inputSupply.toLocaleString("en-us");
     // price.toLocaleString("en-us");
-}
+
+   function probability() {
+    if (inputCap < 100000000) {
+        let likely = document.getElementById("likely");
+        likely.style.display = 'block';
+        console.log("likely");
+    } else if (inputCap >= 100000000) {
+        let likely = document.getElementById("likely");
+        likely.style.display = 'none';
+    } else {
+        console.log("continue");
+    }
+    
+    if (inputCap >= 100000000) {
+        let maybe = document.getElementById("maybe");
+        maybe.style.display = 'block';
+        console.log("maybe");
+    };
+
+    if (inputCap < 10){
+        likely.style.display = 'none';
+        maybe.style.display = 'none';
+    };
+
+   };
+    
+
+    
+};
 
 function calcMultiply() {
-  
-  
+
+
     if (checkbox.checked === true) {
 
-         //change name of function to division and remove top event listeners & add function for multiplication
+        //change name of function to division and remove top event listeners & add function for multiplication
         document.getElementById("cap-el").addEventListener('keyup', calcMultiply); // Add event listeners to the input boxes
         document.getElementById("sup-el").addEventListener('keyup', calcMultiply);
 
@@ -54,16 +87,16 @@ function calcMultiply() {
         document.getElementById("price").value = price;
     } else {
         return calcDivide();
-    }
+    };
 
-}
+};
 
 
 const checkbox = document.getElementById('check')
 
 
 function calcSwitch() {
-    
+
     if (checkbox.checked) {
         checkbox.checked = false;
         capSwitch.innerHTML = "Market Cap"; // When unchecked revert back to the original html label
@@ -77,8 +110,8 @@ function calcSwitch() {
         console.log("I am multiplying");
         valueReset();
         calcMultiply();
-    }
-}
+    };
+};
 
 function valueReset() { // Reset values of calculator back to default
 
@@ -90,8 +123,20 @@ function valueReset() { // Reset values of calculator back to default
     capEl.value = "";
     price.value = "0";
 
-}
+};
 
 
 //localStorage.setItem("price", price.toFixed(2));
 
+
+// Probability Bar 
+
+function probability() {
+
+
+    if (inputCap > 500000000) {
+        let likely = document.getElementById("likely");
+        likely.style.display = 'block';
+        console.log("hi");
+    };
+};
