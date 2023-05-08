@@ -508,22 +508,31 @@ option {
        font-size: 1em; 
     }
 
-    .bar_box {
-        width: 50%;
-    height: 200px;
-    /* border: 1px solid red; */
-    position: absolute;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%;
-    left: 25%;
+    .box {
+        width: 366px;
     }
 
-    .box {
+    .bar_box{
+        width: 50%;
+        height: 56px;
+        /* border: 1px solid red; */
         position: absolute;
-        left: -2%;
-        top: 77%;
+        bottom: 0;
+    }
+
+    .bar {
+        width: 80%;
+        height: 38px;
+        border: 2px solid rgb(199, 199, 199);
+        position: relative;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-left: auto;
+    }
+
+    .calc_nav {
+        width: 100%;
+       
     }
 }
 
