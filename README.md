@@ -6,7 +6,7 @@
 ### To view the project please [click here]().
 <br>
 
-![Index page screenshot](../Oku/assets/images/screenshots/responsivity.png)
+![Index page screenshot](/assets/images/screenshots/responsive.png)
 
 
 ## **Background**
