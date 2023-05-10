@@ -100,19 +100,14 @@ Oku instantly calculates the corresponding price based on the provided data.
 
 ## **Wireframes**
 
+Originally, my wireframes showcased a highly stylized representation of my website. 
+However, as the development process advanced, the growing urgency of incorporating responsive design necessitated substantial modifications. It became evident that the initial design would have imposed limitations, prompting a wise decision to pursue a seamless and adaptable design approach. Consequently, significant changes were made to ensure a responsive and user-friendly experience across various devices.
 
-
-### **Mobile First Design**
-
-Landing Page & About Section (Mobile):<br>
-![Home and About Page]()
-
-
-
-### **Desktop Scaling**
 
 **Homepage (Desktop):**<br>
-![Homepage]()
+![Homepage](../Oku/assets/images/Wireframes/wireframe1.png)
+
+![Homepage](../Oku/assets/images/Wireframes/wireframe2.png)
 
 
 ## **Function**

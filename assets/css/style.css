@@ -132,13 +132,21 @@ div h3 {
 
 /* Bar */
 
+/* .bar_place {
+    padding: 20px;
+    margin-right: 10px;
+    height: auto;
+    bottom: 0;
+    color: #E7E5DF;
+} */
+
 .bar_box {
     width: 50%;
     height: 150px;
     /* border: 1px solid red; */
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    
+
 }
 
 .bar {
@@ -155,17 +163,17 @@ div h3 {
 }
 
 .likely {
-   width: 75%;
-   height: 48px;
-   background: #ffad63;
-   display: none;
+    width: 75%;
+    height: 48px;
+    background: #ffad63;
+    display: none;
 }
 
 .maybe {
-   width: 50%;
-   height: 48px;
-   background: #ffad63;
-   display: none;
+    width: 50%;
+    height: 48px;
+    background: #ffad63;
+    display: none;
 }
 
 .unlikely {
@@ -209,8 +217,8 @@ div h3 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background:  #E7E5DF;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.062); 
+    background: #E7E5DF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.062);
 }
 
 .calc_nav {
@@ -332,7 +340,8 @@ input::-webkit-inner-spin-button {
     padding: 20px;
 }
 
-.pInput { /* Portfolio input box */
+.pInput {
+    /* Portfolio input box */
     padding: 5px;
     border: none;
     outline: none;
@@ -352,9 +361,9 @@ input::-webkit-inner-spin-button {
 }
 
 .inputBorder {
-    border-bottom: none; 
-    margin: 10px;   
-}  
+    border-bottom: none;
+    margin: 10px;
+}
 
 .assetBox {
     width: 80px;
@@ -442,7 +451,8 @@ option {
 
 }
 
-.pSymbol { /* Close btn */
+.pSymbol {
+    /* Close btn */
     background: #e7e5df;
     border-radius: 3px;
     padding: 5px 10px;
@@ -484,16 +494,79 @@ option {
     color: #E7E5DF;
 }
 
-.footer p {
-    margin-right: 10px;
+
+footer {
+    color: #E7E5DF;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    background-color: #0d0d0d;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
 }
 
 /* Responsive layout  */
+@media (min-width: 1400px) {
+    .text_box {
+        width: 44vw;
+        margin-right: 0;
+    }
+
+    div h1 {
+        font-size: 6em;
+    }
+
+    div h2 {
+        font-size: 2.5em;
+        line-height: normal;
+    }
+
+    .bar_box {
+        width: 69%;
+    }
+
+    .bar {
+        height: 57px;
+        width: 90%;
+    }
+
+    .grid_input {
+        padding: 36px;
+    }
+}
+
+
 @media (max-width: 850px) {
     .row {
         -webkit-flex-direction: column;
 
         flex-direction: column;
+    }
+
+    .text_box {
+        width: 65vw;
+    }
+
+    div h1 {
+        font-size: 4.5em;
+    }
+
+    .box {
+        position: relative;
+        right: 0;
+        margin-top: 80px;
+    }
+
+    .bar_box {
+        height: 105px;
+        width: 96%;
+        background-color: #0d0d0d;
+    }
+
+    footer {
+        text-align: center;
     }
 }
 
@@ -501,7 +574,7 @@ option {
     .text_box {
         margin-left: auto;
         margin-right: auto;
-        width: 306px;
+        width: 239px;
         top: 50px;
         position: relative;
     }
@@ -511,19 +584,18 @@ option {
     }
 
     div h2 {
-       font-size: 1em; 
+        font-size: 1em;
     }
 
     .box {
         width: 366px;
     }
 
-    .bar_box{
-        width: 50%;
-        height: 56px;
+    .bar_box {
+        width: 100%;
+        height: 68px;
         /* border: 1px solid red; */
-        position: absolute;
-        bottom: 0;
+        bottom: 32px;
     }
 
     .bar {
@@ -538,11 +610,11 @@ option {
 
     .calc_nav {
         width: 100%;
-       
+
     }
 
     .grid_input {
-        padding: 10px;
+        padding: 25px 15px 25px 0px;
     }
 
     #switch {
@@ -561,7 +633,7 @@ option {
 
     ::-webkit-scrollbar-track {
         margin-top: 150px;
-      
+
     }
 }
 
@@ -571,7 +643,3 @@ option {
         right: 23px;
     }
 }
-
-
-
-
