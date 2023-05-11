@@ -172,7 +172,7 @@ By offering this switch toggle feature, users have the flexibility to perform bo
 
 ### **Information and probability bar**
 
-![Probability Bar](/assets/images/screenshots/info.png)
+![Probability-bar](/assets/images/screenshots/info.png)
 
 As part of my application, I incorporated a visually appealing probability bar graphic to represent the likelihood of achieving the desired price target. This dynamic bar provides users with a visual representation that scales based on the inputted data.
 The probability bar ranges from 0% to 100%, with the top end indicating a certain likelihood of reaching the price target. As users input the relevant data, such as market capitalisation, circulating supply, or other factors, when switched, the bar dynamically adjusts, scaling down to 0% probability as the inputted data deviates from the target.
@@ -183,6 +183,15 @@ In future iterations, I aim to delve deeper into data structures and leverage st
 To access the  probability bar and explore its functionality, users can simply click on the question mark icon within the application. Clicking the question mark reveals not only the probability bar but also provides basic information on how they can utilise websites like CoinMarketCap to assess various digital currencies and their corresponding values, as well as other essential factors.
 CoinMarketCap and similar platforms offer a wealth of information on cryptocurrency market trends, historical data, market capitalisation, circulating supply, and more. By leveraging these websites, users can gain insights into the performance and potential of different digital currencies, aiding them in making informed investment decisions.
 The question mark icon serves as a gateway to both the probability bar and the guidance on utilising platforms like CoinMarketCap. By clicking on it, users can access the displayed information and tools that enhance their understanding of the cryptocurrency landscape and assist them in exploring the market's vast possibilities.
+
+
+## **Portfolio** 
+
+![asset-calculator](/assets/images/screenshots/assetcalc.png)
+
+A convenient feature in my application is the presence of a small navigation bar below the main header. This navigation bar enables users to easily toggle between the Oku Calc and Portfolio Calculator section. To enhance customisation, I incorporated a dropdown menu that allows users to select different icons that best represent their assets. By utilising JavaScript's addition operation in conjunction with another function, the application calculates the user's net worth.
+The tabs within the navigation bar can be added or removed based on the user's preference, offering flexibility and adaptability. To achieve this functionality, I implemented a loop that utilises the querySelector to iterate through each input field and detect values that are above zero. This allows the application to dynamically update the net worth calculation based on the user's inputs.
+By incorporating this intuitive navigation bar and the ability to switch between different tabs, users can seamlessly switch between the Oku Calc and Portfolio Calculator. The net worth calculation further adds value by providing users with a comprehensive overview of their financial standing based on their inputted data.
 
 
 ![Header]()
