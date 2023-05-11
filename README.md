@@ -153,7 +153,7 @@ While the stylised design inspired by Solomia Kravets initially intrigued me, I 
 
 ### **Calculator** 
 
-![Final-page-3](/assets/images/screenshots/calc.png)
+![Calculator-divide](/assets/images/screenshots/calc.png)
 
 In my application, the default action of the calculator is set to division. This means that when the user interacts with the calculator, it automatically performs a division operation using the market capitalisation and circulating supply values provided.
 By taking the market capitalisation and circulating supply as inputs, the calculator applies the division operation to calculate a price target for the digital currency. This default functionality offers users a quick and convenient way to estimate the approximate price of a cryptocurrency based on these key factors.
@@ -161,13 +161,28 @@ To achieve this, I employ JavaScript functions and utilise keyup and keydown eve
 By incorporating this default divisible action, my calculator empowers users to quickly assess the potential price of a digital currency based on its market capitalisation and circulating supply, providing valuable insights for their investment strategies.
 
 
-![Final-page-3](/assets/images/screenshots/calc2.png)
+![Calculator-multiply](/assets/images/screenshots/calc2.png)
 
 
 In addition to the default division action, my calculator application also features a switch toggle that allows users to swap between market capitalisation and price calculations. This switch toggle introduces a dynamic functionality that changes the underlying function used by the calculator.
 When the toggle is activated, it modifies the calculator's behaviour to perform multiplication instead of division. This means that users can now input a price value, and based on this input, the calculator will calculate the corresponding market capitalisation.
 To implement this functionality, I incorporated a checkbox element with a boolean value of true or false. When the checkbox is checked, indicating the user's intention to switch functions, the calculator updates its operation accordingly.
 By offering this switch toggle feature, users have the flexibility to perform both market capitalisation to price and price to market capitalisation calculations using a single calculator. This enhances the versatility and usefulness of the application, catering to a wider range of user needs and preferences.
+
+
+### **Information and probability bar**
+
+![Probability Bar](/assets/images/screenshots/info.png)
+
+As part of my application, I incorporated a visually appealing probability bar graphic to represent the likelihood of achieving the desired price target. This dynamic bar provides users with a visual representation that scales based on the inputted data.
+The probability bar ranges from 0% to 100%, with the top end indicating a certain likelihood of reaching the price target. As users input the relevant data, such as market capitalisation, circulating supply, or other factors, when switched, the bar dynamically adjusts, scaling down to 0% probability as the inputted data deviates from the target.
+While the current implementation provides a basic representation, I am eager to explore more advanced concepts in data structures and algorithms to enhance the accuracy of the probability calculation. By considering potential outliers and incorporating complex calculations, the probability bar can offer users a more comprehensive and precise assessment of the likelihood of achieving their price target.
+In future iterations, I aim to delve deeper into data structures and leverage statistical analysis techniques to refine the probability bar functionality. This will enable the application to account for a wider range of variables, ultimately providing users with a more nuanced and accurate representation of the probability of attaining their desired price target.
+
+
+To access the  probability bar and explore its functionality, users can simply click on the question mark icon within the application. Clicking the question mark reveals not only the probability bar but also provides basic information on how they can utilise websites like CoinMarketCap to assess various digital currencies and their corresponding values, as well as other essential factors.
+CoinMarketCap and similar platforms offer a wealth of information on cryptocurrency market trends, historical data, market capitalisation, circulating supply, and more. By leveraging these websites, users can gain insights into the performance and potential of different digital currencies, aiding them in making informed investment decisions.
+The question mark icon serves as a gateway to both the probability bar and the guidance on utilising platforms like CoinMarketCap. By clicking on it, users can access the displayed information and tools that enhance their understanding of the cryptocurrency landscape and assist them in exploring the market's vast possibilities.
 
 
 ![Header]()
