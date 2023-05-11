@@ -555,17 +555,17 @@ footer {
     }
 
     div h1 {
-        font-size: 5em;
+        font-size: 5.5em;
     }
 
     div h2 {
-        font-size: 1.75em;
+        font-size: 2.5em;
         line-height: normal;
     }
 
     .bar_box {
         width: 59%;
-        top: 50%;
+        top: 65%;
     }
 
     .percent {
@@ -585,12 +585,17 @@ footer {
     .grid_input {
         padding: 36px;
     }
+
+    #help_icon {
+        font-size: 25px;
+    }
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
     .bar_box {
-        top: 55%;
+        top: 60%;
     }
+
 
     .info {
         font-size: 13px;
