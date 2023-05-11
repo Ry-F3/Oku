@@ -17,7 +17,7 @@ function calcDivide() { // Calculate price per token
     //change name of function to division and remove top event listeners & add function for multiplication
     document.getElementById("cap-el").addEventListener('keyup', calcDivide); // Add event listeners to the input boxes
     document.getElementById("sup-el").addEventListener('keyup', calcDivide);
-    document.getElementById("cap-el").addEventListener('keyup', probability);
+    document.getElementById("cap-el").addEventListener('keydown', barStart);
 
     let inputCap = document.getElementById("cap-el").value;
     let inputSupply = document.getElementById("sup-el").value;
@@ -43,6 +43,22 @@ function calcDivide() { // Calculate price per token
     // inputSupply.toLocaleString("en-us");
     // price.toLocaleString("en-us");
 
+    function barStart() {
+        
+        if (inputCap < 5){
+            let certain = document.getElementById("certain");
+            certain.style.display = "block";
+        } else if(inputCap > 5) {
+            document.getElementById("cap-el").addEventListener('keyup', probability);
+            certain.style.display = "none";
+            console.log("keyup");
+        } else {
+            console.log("continue");
+        };
+
+     };
+    
+
    function probability() {
     if (inputCap < 100000000) {
         let likely = document.getElementById("likely");
@@ -53,25 +69,45 @@ function calcDivide() { // Calculate price per token
         likely.style.display = 'none';
     } else {
         console.log("continue");
-    }
+    };
     
-    if (inputCap >= 100000000) {
+    if (inputCap >= 100000000 && inputCap < 100000000000) {
         let maybe = document.getElementById("maybe");
         maybe.style.display = 'block';
         console.log("maybe");
+    } else {
+        console.log("continue");
     };
 
-    if (inputCap < 10){
+    if (inputCap >= 100000000000) {
+        let unlikely = document.getElementById("unlikely");
+        unlikely.style.display = 'block';
+        maybe.style.display = 'none';
+        console.log("unlikely");
+    } else {
+        console.log("continue");
+    };
+
+    if (inputCap >= 100000000000000) {
+        let impossible = document.getElementById("impossible");
+        impossible.style.display = 'block';
+        unlikely.style.display = 'none';
+    } else {
+        console.log("continue");
+    };
+
+   function barReset() {
+  
         likely.style.display = 'none';
         maybe.style.display = 'none';
-    };
-
+        unlikely.style.display = 'none';
    };
-    
 
+  };
     
-};
+ };
 
+ 
 function calcMultiply() {
 
 

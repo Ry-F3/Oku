@@ -105,9 +105,9 @@ However, as the development process advanced, the growing urgency of incorporati
 
 
 **Homepage (Desktop):**<br>
-![Homepage](../Oku/assets/images/Wireframes/wireframe1.png)
+![Homepage](/assets/images/Wireframes/wireframe1.png)
 
-![Homepage](../Oku/assets/images/Wireframes/wireframe2.png)
+![Homepage](/assets/images/Wireframes/wireframe2.png)
 
 
 ## **Function**

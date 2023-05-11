@@ -110,6 +110,47 @@ nav ul li a {
     position: relative;
 }
 
+.text_help {
+    color: #e7e5dfd5;
+    width: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    /* border: 1px solid #E7E5DF; */
+    height: fit-content;
+    border-radius: 6px;
+}
+
+.percent {
+    margin: 50px;
+}
+
+.info {
+    padding: 25px 5px 10px 60px;
+}
+
+.info a {
+    color: #ff9332;
+}
+
+#text_display {
+    display: none;
+}
+
+#help_icon {
+    color: #E7E5DF;
+    padding: 5px 30px 10px 0px;
+    margin: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+    /* float: right; */
+    line-height: 35px;
+    color: #ff9332;
+}
+
 
 div h1 {
     font-size: 4em;
@@ -122,30 +163,19 @@ div h2 {
     margin-top: 10px;
     line-height: 25px;
     letter-spacing: 2px;
-    color: #E7E5DF;
+    color: #e7e5dfbd;
 }
 
-div h3 {
-    color: #e7e5df7a;
-    font-size: 14px;
-}
 
 /* Bar */
 
-/* .bar_place {
-    padding: 20px;
-    margin-right: 10px;
-    height: auto;
-    bottom: 0;
-    color: #E7E5DF;
-} */
-
 .bar_box {
     width: 50%;
-    height: 150px;
+    height: 290px;
     /* border: 1px solid red; */
     position: fixed;
     bottom: 0;
+    
 
 }
 
@@ -160,6 +190,12 @@ div h3 {
     margin-right: auto;
     background: #0d0d0d;
 
+}
+
+.certain {
+    width: 100%;
+    height: 48px;
+    background: #ffad63;
 }
 
 .likely {
@@ -181,6 +217,11 @@ div h3 {
     height: 48px;
     background: #ffad63;
     display: none;
+}
+
+.impossible {
+    width: 0%;
+    height: 48px;
 }
 
 
@@ -515,11 +556,11 @@ footer {
     }
 
     div h1 {
-        font-size: 6em;
+        font-size: 5em;
     }
 
     div h2 {
-        font-size: 2.5em;
+        font-size: 1.75em;
         line-height: normal;
     }
 
