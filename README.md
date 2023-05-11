@@ -342,7 +342,7 @@ Remove Input: Bitcoin | Net Worth: $500 | Remove an asset (Bitcoin) from the por
 
 **Index.html** - All of the errors highlighted in the screenshot above have now been rectified.
 
-#### **CSS (Jigsaw) validation**
+#### **CSS validation** using [jigsaw](https://jigsaw.w3.org/css-validator/validator) :
 
 ![Error](/assets/images/screenshots/Screenshot1.png)
 
@@ -370,7 +370,7 @@ Developed by **Rhys.Alexander.Few**
 ### **Code**
 
 * **Adam Boley** 
-    * Markdown Language and Readme guidance and peer review - [Github](https://github.com/AdamBoley).
+    * For looking at my code and giving me suggestions  - [Github](https://github.com/AdamBoley).
 
 <br>
 
