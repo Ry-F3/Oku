@@ -241,6 +241,8 @@ By incorporating ARIA labels and employing high contrast colors, the website str
 
 * Limited visibility of smaller icons on certain browsers and mobile devices with smaller screens.
 
+* Help icon has not been made responsive for mobile devices.
+
 
 **List of fixed bugs**
 
@@ -273,7 +275,7 @@ By incorporating ARIA labels and employing high contrast colors, the website str
     * Used for some of the website's icons.
 
 * [Font Awesome](https://khan.github.io/Font-Awesome/) 
-      * Used for most of the website's icons.
+    git push* Used for most of the website's icons.
 
 * [Google Fonts](https://fonts.google.com/)
     * Used tool to pair fonts.
@@ -287,16 +289,38 @@ By incorporating ARIA labels and employing high contrast colors, the website str
 
 | User Story   | Fulfilment | 
 | ------------------------------------------------------------------ |:---------------------------------------------|
+As a user, I want to be able to calculate the price target for a digital currency based on its market cap and circulating supply, so I can make informed investment decisions. | The application provides a calculator where users can enter the market cap and circulating supply of a digital currency. The calculator then calculates the price target for the currency and displays it to the user. This enables users to make informed investment decisions based on the calculated price target. 
+As a user, I want the option to switch between calculating the market cap and calculating the price based on the entered values, so I can have flexibility in my calculations. | The application includes a toggle switch that allows users to switch between calculating the market cap and calculating the price. When the toggle is switched to the market cap mode, the calculator updates its functionality to calculate the market cap based on the entered values. This provides users with the flexibility to perform different types of calculations based on their needs.
+As a user, I want to be able to add and remove inputs in the portfolio calculator, so I can track the performance of multiple assets simultaneously. | The portfolio calculator section of the application allows users to dynamically add and remove inputs for different assets. Users can easily add new assets by clicking the "Add Input" button and remove existing assets by clicking the "Remove" button next to each input. This feature enables users to track the performance of multiple assets simultaneously in their portfolio.
+As a user, I want the probability bar to accurately reflect the likelihood of achieving a price target, so I can gauge the potential success of my investments. | The probability bar in the application visually represents the likelihood of achieving a price target. As users enter values and calculate the price target, the bar dynamically adjusts to reflect the probability of reaching the target. The bar scales from 0% to 100%, with the top end representing certainty. This provides users with a visual representation to gauge the potential success of their investments based on the calculated probability.
+As a user, I want the website to be responsive and accessible on different devices and screen sizes, so I can use it conveniently on desktop and mobile devices. | The website is designed to be responsive and accessible across various devices and screen sizes. It adapts its layout and components to ensure a seamless user experience on both desktop and mobile devices. Users can conveniently access and use the calculator on their preferred device without any usability or display issues.
+As a user, I want the website colors to have high contrast and be visually appealing, so I can easily read and understand the content. | The website color scheme prioritises high contrast and readability. The chosen colors provide a visually appealing and engaging experience while ensuring that the content remains easily readable. This enhances the user's ability to understand the information and calculations presented on the website.
+As a user, I want the website to load quickly and efficiently, so I can access the calculator without delay. | The website is optimised for fast loading and efficient performance. It follows best practices for code optimization and utilizes appropriate caching techniques. This ensures that users can access the calculator and other functionalities without experiencing significant delays or slow loading times.
+As a user, I want the website to provide clear instructions and explanations on how to use the calculator, so I can easily understand its features and functionality. | The website includes clear instructions and explanations on how to use the calculator. There is a prominently displayed "Help" or "Instructions" section that users can access to get detailed guidance on using the calculator. This helps users understand the features and functionality of the calculator, enabling them to use it effectively for their calculations.
 
 
 ### **Testing functionality**
 
 | Input     | Result   | Intention   |
 | ------------------------------------------------------------------ |:---------------------------------------------| :---------------------------------------------------------|
-
+Market Cap: $10,000,000<br>Circulating Supply: 1,000,000 | Price Target: $10 | Calculate the price target based on the given market cap and circulating supply.
+Market Cap: $5,000,000<br>Circulating Supply: 2,500,000 | Price Target: $2 | Calculate the price target based on the given market cap and circulating supply.
+Toggle Switch: Circulating Supply<br>Circulating Supply: 1,000,000<br>Price: $10 | Market Cap: $10,000,000 | Switch to calculate the market cap and calculate the market cap based on the given circulating supply and price.
+Access the website on a desktop device and click the question mark icon | 	Display instructions and explanations on how to use the calculator | Click the question mark icon to access the help section and view detailed instructions on how to use the calculator and understand its features.
+Add Input: Bitcoin<br>Amount: 2<br>Price: $50 | Net Worth: $100 | Add an asset to the portfolio with the name "Bitcoin", an amount of 2, and a price of $50. Calculate the net worth based on the entered asset data.
+Remove Input: Bitcoin | Net Worth: $500 | Remove an asset (Bitcoin) from the portfolio and calculate the net worth based on the remaining assets.
 
 ### **Testing on different devices**
 
+* Samsung Flip3 
+    * Icons not working in the porfolio section.
+    * Question mark icon has not been made responsive for mobile devices.
+
+* Samsung A13
+    * No further issues than previously stated.
+
+* Ipad Pro
+    * Issues surrounding input sizing with the porfolio section.
 
 
 ### **Testing code**
@@ -330,16 +354,13 @@ By incorporating ARIA labels and employing high contrast colors, the website str
 
 **Index.html**:
 
-
-**Form.html**:
-
+![SEO](/assets/images/screenshots/seo1.png)
 
 ##### Mobile:
 
 **Index.html**:
 
-
-**Form.html**:
+![SEO](/assets/images/screenshots/seo2.png)
 
 
 ## **Credits**
