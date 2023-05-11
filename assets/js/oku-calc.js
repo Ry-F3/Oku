@@ -38,11 +38,6 @@ function calcDivide() { // Calculate price per token
         console.log("Please input values");
     }
 
-    // inputCap.toLocaleString("en-us");
-    // console.log(inputCap.toLocaleString("en-us"))
-    // inputSupply.toLocaleString("en-us");
-    // price.toLocaleString("en-us");
-
     function barStart() {
         
         if (inputCap < 5){
