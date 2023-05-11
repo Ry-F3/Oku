@@ -225,19 +225,33 @@ By incorporating ARIA labels and employing high contrast colors, the website str
 
 ## **Bugs**
 
-[W3 HTML](https://validator.w3.org/)  [Jigsaw](https://jigsaw.w3.org/css-validator/) 
-
 **List of known bugs:**
 
+* Icons from Font Awesome not displaying properly on certain browsers and smaller screens.
+
+* Accumulation issue in portfolio calculations, where the calculations were being added together multiple times per input value.
+
+* Scroll bar functionality on mobile devices requiring the use of a div element and adjustments to the height property.
+
+* Click event not recognized within portfolio.js, resolved by utilising the DOMContentLoaded event listener.
+
+* Challenges with adding and deleting inputs, addressed by updating the HTML with JavaScript and using specific functions to handle changes in functionality.
+
+* Difficulty in achieving a responsive design for smaller screens, particularly with displaying smaller icons.
+
+* Limited visibility of smaller icons on certain browsers and mobile devices with smaller screens.
 
 
 **List of fixed bugs**
 
+* Issue with click event recognition in portfolio.js:
+    * The click event was not being recognized as expected.
+    * Solution: Utilised the DOMContentLoaded event listener to ensure the default function is loaded into the DOM immediately upon website display. This resolved the click event recognition issue.
+* Accumulation issue in portfolio calculations:
+    * Calculations in the loop were accumulating and adding together multiple times for each input value.
+    * Solution: Refactored event listener implementation to properly remove and add event listeners, ensuring the calculations are iterated correctly. This fixed the accumulation problem and provided accurate results.
 
-## **Future work**
 
-
- 
 ## **Technologies**
 
 * [Github](https://github.com/) 
@@ -256,10 +270,10 @@ By incorporating ARIA labels and employing high contrast colors, the website str
     * Used a platform to connect with my mentor and fellow course alumni.
 
 * [Remixicon](https://remixicon.com/)
-    * Used for most of the website's icons.
+    * Used for some of the website's icons.
 
 * [Font Awesome](https://khan.github.io/Font-Awesome/) 
-    * Used for some of the website's icons.
+      * Used for most of the website's icons.
 
 * [Google Fonts](https://fonts.google.com/)
     * Used tool to pair fonts.
