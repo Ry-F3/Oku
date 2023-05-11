@@ -3,7 +3,7 @@
 # Oku 
 
 # Code Institute Portfolio Project 2: JavaScript Essentials - Front end Calculator deployed via Github.
-### To view the project please [click here]().
+### To view the project please [click here](https://ry-f3.github.io/Oku/).
 <br>
 
 ![Index page screenshot](/assets/images/screenshots/main.png)
@@ -193,14 +193,12 @@ A convenient feature in my application is the presence of a small navigation bar
 The tabs within the navigation bar can be added or removed based on the user's preference, offering flexibility and adaptability. To achieve this functionality, I implemented a loop that utilises the querySelector to iterate through each input field and detect values that are above zero. This allows the application to dynamically update the net worth calculation based on the user's inputs.
 By incorporating this intuitive navigation bar and the ability to switch between different tabs, users can seamlessly switch between the Oku Calc and Portfolio Calculator. The net worth calculation further adds value by providing users with a comprehensive overview of their financial standing based on their inputted data.
 
+During the development process, I encountered a scenario that involved adding and deleting inputs dynamically. This presented a unique challenge that required careful handling and problem-solving. With the guidance and support of my mentor, I was able to overcome this challenge and implement the desired functionality successfully.
+With my mentor's guidance, I explored different approaches and solutions to achieve the desired functionality. Using JavaScript, I took on the task of manipulating the HTML structure by implementing specific functions triggered by user interactions. This allowed me to dynamically add or remove inputs based on the user's actions, resulting in a seamless and responsive user experience.
+The mentor's role was pivotal in this process, offering guidance, suggestions, and insights into effective techniques. They shared their expertise, pointing me in the right direction while encouraging independent problem-solving. By collaborating with my mentor, I was able to learn from their experience and successfully implement the desired functionality in my application.
+Encountering and resolving this scenario not only expanded my technical skills but also emphasised the importance of seeking guidance and leveraging the knowledge of mentors. Their support and guidance empowered me to overcome challenges and deliver a robust, user-friendly solution.
 
-![Header]()
 
-### **Footer**
-
-
-
-![Footer]()
 
 ### **Unified colour scheme**
 [Adobe Stock]().  [Coolors.co]() 
@@ -214,15 +212,6 @@ By incorporating this intuitive navigation bar and the ability to switch between
 ![Index introduction]()
 
 ### **User feedback**
-
-
-
-
-### **Internal Navigation**
-
-
-
-### **Image Galleries** 
 
 
 
