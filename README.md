@@ -19,14 +19,14 @@ Financial markets, including the cryptocurrency market, operate in cycles charac
 
 Oku aims to fill this gap by offering a comprehensive calculator specifically tailored for the cryptocurrency market. By incorporating essential factors such as circulating supply and market capitalization, the calculator assists traders in setting realistic price targets and making informed investment decisions based on quantitative analysis.
 
-**Understanding Circulating Supply and Market Capitalization:**<br>
+**Understanding Circulating Supply and Market Capitalisation:**<br>
 When analyzing a digital currency, it is crucial to consider its circulating supply and whether it is capped or not. This distinction determines whether the currency is deflationary, like Bitcoin with a limited supply, or inflationary, similar to fiat currencies such as the US dollar. Fiat currencies can be continuously printed through policies like quantitative easing and are not backed by gold.
 
-**To calculate the price of a cryptocurrency, divide its market capitalization by the circulating supply:**<br>
+**To calculate the price of a cryptocurrency, divide its market capitalisation by the circulating supply:**<br>
 
 Price = Market Cap / Circulating Supply
 
-**Conversely, to determine the market capitalization, multiply the price by the circulating supply:**<br>
+**Conversely, to determine the market capitalisation, multiply the price by the circulating supply:**<br>
 
 Market Cap = Price x Circulating Supply
 
@@ -205,13 +205,17 @@ During the implementation process, I experimented with various techniques to ach
 By incorporating this workaround, users can now seamlessly scroll through the content within the tab, ensuring a smooth and intuitive experience, especially when they have numerous assets to manage.
 In the future, I plan to explore alternative approaches and refine the implementation to further optimise the scrolling behaviour on mobile devices.
 
-The scrollbar's basic styling came from [W3 Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2), but I adjusted it to flow with the application's visual style.
+The scrollbar's basic styling came from [W3 Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2), but this was adjusted to flow with the application's visual style.
 
 
 ### **Unified colour scheme**
-[Adobe Stock]().  [Coolors.co]() 
 
-![Unified colour scheme]()
+![Unified colour scheme](/assets/images/screenshots/coinstats.png)
+
+The color scheme of Oku takes inspiration from [CoinStats](https://coinstats.app/) and prominently features the color orange (#ff9332) to convey specific communication of its features.
+The choice to incorporate the color orange was deliberate, as it holds connotations of enthusiasm, creativity, and warmth. Within the context of the website, the vibrant orange color creates an engaging and visually stimulating environment, fostering a sense of energy and excitement related to the world of cryptocurrencies.
+Furthermore, the orange color evokes feelings of optimism and positivity, aligning well with the forward-thinking nature of the cryptocurrency industry. By utilising orange throughout the website, a dynamic and compelling visual identity is established, resonating with users who possess a passion for digital currencies.
+
 
 ### **Introductory text**
 
