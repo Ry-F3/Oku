@@ -116,7 +116,6 @@ nav ul li a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    /* border: 1px solid #E7E5DF; */
     height: fit-content;
     border-radius: 6px;
 }
@@ -145,7 +144,6 @@ nav ul li a {
     cursor: pointer;
     font-size: 22px;
     font-weight: 600;
-    /* float: right; */
     line-height: 35px;
     color: #ff9332;
 }
@@ -171,7 +169,6 @@ div h2 {
 .bar_box {
     width: 50%;
     height: 290px;
-    /* border: 1px solid red; */
     position: fixed;
     bottom: 0;
     
@@ -384,7 +381,6 @@ input::-webkit-inner-spin-button {
     border: none;
     outline: none;
     height: 32px;
-    /* font-weight: 600; */
     border-radius: 0 3px 3px 0;
     background-color: #e7e5df;
 }
@@ -480,10 +476,8 @@ option {
     font-weight: 900;
     color: #111d13;
     cursor: pointer;
-    /* float: right; */
     font-size: 20px;
     margin-right: -4px;
-    /* margin-top: 39px; */
     position: relative;
     right: 10px;
 
@@ -657,7 +651,6 @@ footer {
     .bar_box {
         width: 100%;
         height: 68px;
-        /* border: 1px solid red; */
         bottom: 32px;
     }
 

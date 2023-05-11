@@ -207,6 +207,9 @@ In the future, I plan to explore alternative approaches and refine the implement
 
 The scrollbar's basic styling came from [W3 Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2), but this was adjusted to flow with the application's visual style.
 
+## **Favicon** 
+
+I incorporated a favicon into the website, using a cutout from the previous website design. The orange color of the favicon complements the overall style of the website, creating a cohesive visual experience.
 
 ### **Unified colour scheme**
 
