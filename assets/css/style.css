@@ -111,12 +111,11 @@ nav ul li a {
 }
 
 .text_help {
-    color: #e7e5dfd5;
+    color: white;
     width: 110%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    font-size: 15px;
     /* border: 1px solid #E7E5DF; */
     height: fit-content;
     border-radius: 6px;
@@ -127,7 +126,7 @@ nav ul li a {
 }
 
 .info {
-    padding: 25px 5px 10px 60px;
+    padding: 25px 5px 10px 50px;
 }
 
 .info a {
@@ -565,16 +564,36 @@ footer {
     }
 
     .bar_box {
-        width: 69%;
+        width: 59%;
+        top: 50%;
+    }
+
+    .percent {
+        margin: 80px;
+    }
+
+    .info {
+        padding: 20px 10px 10px 80px;
+        width: 85%;
     }
 
     .bar {
         height: 57px;
-        width: 90%;
+        width: 84%;
     }
 
     .grid_input {
         padding: 36px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .bar_box {
+        top: 55%;
+    }
+
+    .info {
+        font-size: 13px;
     }
 }
 
