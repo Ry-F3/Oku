@@ -301,19 +301,28 @@ By incorporating ARIA labels and employing high contrast colors, the website str
 
 ### **Testing code**
 
-#### **HTML validation**
 
+#### **JavaScript Validation**  using *[jshint](https://jshint.com/)* :
+ 
+**Porfolio.js** - The validator highlighted missing semicolons and overused semicolons in the code. These issues have been identified and resolved to adhere to proper coding conventions.
 
+**help.js** - The validator highlighted missing semicolons and overused semicolons in the code. These issues have been identified and resolved to adhere to proper coding conventions.
 
-**Index.html** - 
+**nav.js** - The validator highlighted missing semicolons and overused semicolons in the code. These issues have been identified and resolved to adhere to proper coding conventions.
 
-**Form.html** - 
+**oku-cal.js** - It was flagged that four variables are undefined and five variables are unused. However, these variables are actually utilised in the code, and removing them would break the functionality. It is possible that the validation tool misinterpreted their usage or didn't fully capture it. Alternatively, it could be due to not following the expected conventions. I would appreciate any feedback on this.
+
+#### **HTML validation** using [W3 Validator](https://validator.w3.org/#validate_by_input) :
+
+![Errors](/assets/images/screenshots/screenshot3.png)
+
+**Index.html** - All of the errors highlighted in the screenshot above have now been rectified.
 
 #### **CSS (Jigsaw) validation**
 
-![Error]()
+![Error](/assets/images/screenshots/Screenshot1.png)
 
-**Stylesheet.css** - 
+**Stylesheet.css** - The error highlighted in the screenshot above has been rectified.
 
 #### **Lighthouse performance testing**
 
