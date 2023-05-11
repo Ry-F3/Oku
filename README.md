@@ -146,14 +146,9 @@ While the stylised design inspired by Solomia Kravets initially intrigued me, I 
 
 ![Final-page-2](/assets/images/screenshots/homepage2.png)
 
-![Final-page-3]()
+<br>
 
-![Final-page-4]()
-
-![Final-page-5]()
-
-![Final-page-6]()
-
+![Final-page-3](/assets/images/screenshots/assetspage.png)
 ## **Features**
 
 ### **Header** 

@@ -593,7 +593,7 @@ footer {
 
 @media (max-width: 1280px) {
     .bar_box {
-        top: 60%;
+        /* top: 60%; */
     }
 
 
