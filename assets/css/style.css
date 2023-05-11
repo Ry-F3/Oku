@@ -335,6 +335,10 @@ div h2 {
 
 /* Content inside porfolio tav */
 
+/* .display {
+    display: none;
+} */
+
 .grid_input.portfolio {
     display: none;
     width: 100%;
