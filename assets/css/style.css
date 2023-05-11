@@ -333,11 +333,7 @@ div h2 {
     background: transparent;
 }
 
-/* Content inside porfolio tav */
-
-/* .display {
-    display: none;
-} */
+/* Content inside porfolio tab */
 
 .grid_input.portfolio {
     display: none;
@@ -349,7 +345,7 @@ input:focus {
     outline: none;
 }
 
-input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button, /* scroll bar was code used from w3 schools */
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;

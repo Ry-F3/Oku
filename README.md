@@ -182,7 +182,7 @@ In future iterations, I aim to delve deeper into data structures and leverage st
 
 To access the  probability bar and explore its functionality, users can simply click on the question mark icon within the application. Clicking the question mark reveals not only the probability bar but also provides basic information on how they can utilise websites like CoinMarketCap to assess various digital currencies and their corresponding values, as well as other essential factors.
 CoinMarketCap and similar platforms offer a wealth of information on cryptocurrency market trends, historical data, market capitalisation, circulating supply, and more. By leveraging these websites, users can gain insights into the performance and potential of different digital currencies, aiding them in making informed investment decisions.
-The question mark icon serves as a gateway to both the probability bar and the guidance on utilising platforms like CoinMarketCap. By clicking on it, users can access the displayed information and tools that enhance their understanding of the cryptocurrency landscape and assist them in exploring the market's vast possibilities.
+The question mark icon serves as a gateway to both the probability bar and the guidance on utilising platforms like CoinMarketCap. By clicking on it, users can access the displayed information and tools that enhance their understanding of the cryptocurrences and assist them in exploring the market's vast possibilities.
 
 
 ## **Portfolio** 
@@ -198,6 +198,14 @@ With my mentor's guidance, I explored different approaches and solutions to achi
 The mentor's role was pivotal in this process, offering guidance, suggestions, and insights into effective techniques. They shared their expertise, pointing me in the right direction while encouraging independent problem-solving. By collaborating with my mentor, I was able to learn from their experience and successfully implement the desired functionality in my application.
 Encountering and resolving this scenario not only expanded my technical skills but also emphasised the importance of seeking guidance and leveraging the knowledge of mentors. Their support and guidance empowered me to overcome challenges and deliver a robust, user-friendly solution.
 
+![asset-calculator](/assets/images/screenshots/scroll.png)
+
+In order to enable a scroll bar for mobile devices in my application, I encountered a slight challenge. To address this, I implemented a div element with dummy text using Lorem Ipsum. This approach helped create the appearance of additional height and provided room for the content to be scrollable. Although adjusting the height directly didn't yield the desired outcome, incorporating the div element allowed users to scroll if they added more assets to the tab.
+During the implementation process, I experimented with various techniques to achieve a scrollable interface for mobile devices. While it initially posed some clunkiness, the addition of the div element with placeholder text effectively created the necessary conditions for the scroll bar to function properly.
+By incorporating this workaround, users can now seamlessly scroll through the content within the tab, ensuring a smooth and intuitive experience, especially when they have numerous assets to manage.
+In the future, I plan to explore alternative approaches and refine the implementation to further optimise the scrolling behaviour on mobile devices.
+
+The scrollbar's basic styling came from [W3 Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2), but I adjusted it to flow with the application's visual style.
 
 
 ### **Unified colour scheme**
