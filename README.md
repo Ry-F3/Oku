@@ -80,7 +80,7 @@ Whether they are experienced traders, long-term investors, crypto enthusiasts, n
 
 **Key points on how I can use Oku:**
 
-1. As I log into Oku, I am greeted with a clean and intuitive interface.
+1. As I open up Oku, I am greeted with a clean and intuitive interface.
 
 2. I input the circulating supply and market capitalization of the cryptocurrency I am interested in.
 Oku instantly calculates the corresponding price based on the provided data.
@@ -110,15 +110,41 @@ However, as the development process advanced, the growing urgency of incorporati
 ![Homepage](/assets/images/Wireframes/wireframe2.png)
 
 
-## **Function**
+## **Function and User Interaction**
+ 
+In addition to outlining the current functionality of Oku, I acknowledge that there are several avenues for future improvements. These areas of development could enhance user interaction and elevate the overall user experience of the application. Here are some ideas for future works:
 
-https://formdump.codeinstitute.net <br>
+1. **Refined User Interaction:** The focus is to further refine the user interface and interaction of Oku, making it more intuitive and user-friendly. By continuously optimising the design and user flow, whilst aiming to make what  the user needs to do more clear.
+
+2. **Real-Time Data Integration:** A valuable enhancement would involve integrating an API to provide real-time data on cryptocurrency prices, market trends, and other relevant information. This integration will ensure that users have access to the most up-to-date and accurate data within the application.
+
+3. **Email Data Sharing:** To enhance convenience and flexibility, a feature that allows users to easily send their portfolio data or other relevant information via email can be implemented. This will enable users to securely share their data with themselves or others, facilitating collaboration and analysis.
+
+4. **Login System with User Profiles:** By implementing a login system with personalised user profiles, Oku could offer a more tailored experience. This will allow users to securely access their personal accounts, save preferences, and store their portfolio information for seamless usage across devices.
+
+5. **Advanced Probability Feature:** The aim is to enhance the existing probability feature by incorporating advanced algorithms or data analysis techniques. This improvement will make the calculations more accurate and reliable, providing users with more meaningful insights and predictions.
+
+These ideas serve as potential future works for Oku, reflecting my commitment to continuously improve the application and meet the evolving needs of the users.
+
+**Screenshots of the original site**
+
+![Final-page-1](/assets/images/screenshots/original1.png)
+
+Initially, I took inspiration from [Solomia Kravets](https://dribbble.com/shots/16754003--buy-exchange-cryptocurrency-website) for the stylised design of my application. The intricate and visually captivating design elements were impressive. However, as I delved further into the project, I recognised that achieving responsiveness would entail substantial backtracking. Since my primary focus was on JavaScript functionality, I made the conscious decision to prioritise that aspect over the elaborate design details.
+
+As a result, I simplified the design of my calculator application, placing emphasis on ensuring a seamless user experience and efficient functionality. By streamlining the design, I aimed to create an interface that is intuitive and user-friendly, allowing users to easily interact with the calculator and perform calculations effortlessly.
+
+While the stylised design inspired by Solomia Kravets initially intrigued me, I chose to simplify it to align with the core objective of the project – delivering a robust and functional JavaScript application. The simplified design allows users to focus on the calculator's core functionality, ensuring a seamless and efficient user experience.
 
 **Screenshots of the final pages below:**
 
-![Final-page-1]()
+<br>
 
-![Final-page-2]()
+![Final-page-1](/assets/images/screenshots/homepage1.png)
+
+<br>
+
+![Final-page-2](/assets/images/screenshots/homepage2.png)
 
 ![Final-page-3]()
 
