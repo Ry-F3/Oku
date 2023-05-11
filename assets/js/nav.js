@@ -18,17 +18,19 @@ function navigate(event) {
         // if the gir input item has a class name the same as the clicked nav item
         if (item.classList.contains(event.target.id)) {
             // show it
-            item.style.display = 'block'
+            item.style.display = 'block';
         }
         // other wise hide it
         else item.style.display = 'none';
-    })
+    });
 
     // get the clicked button, set the active tab
     const newActiveTab = document.querySelector(`#${event.target.id}`);
     newActiveTab.classList.remove('btn_click');
     newActiveTab.classList.add('btn_active');
 }
+
+
 
 
 
