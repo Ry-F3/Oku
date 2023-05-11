@@ -6,7 +6,7 @@
 ### To view the project please [click here]().
 <br>
 
-![Index page screenshot](/assets/images/screenshots/responsive.png)
+![Index page screenshot](/assets/images/screenshots/main.png)
 
 
 ## **Background**
@@ -151,8 +151,23 @@ While the stylised design inspired by Solomia Kravets initially intrigued me, I 
 ![Final-page-3](/assets/images/screenshots/assetspage.png)
 ## **Features**
 
-### **Header** 
+### **Calculator** 
 
+![Final-page-3](/assets/images/screenshots/calc.png)
+
+In my application, the default action of the calculator is set to division. This means that when the user interacts with the calculator, it automatically performs a division operation using the market capitalisation and circulating supply values provided.
+By taking the market capitalisation and circulating supply as inputs, the calculator applies the division operation to calculate a price target for the digital currency. This default functionality offers users a quick and convenient way to estimate the approximate price of a cryptocurrency based on these key factors.
+To achieve this, I employ JavaScript functions and utilise keyup and keydown event listeners to capture user input in real-time. As the user enters or modifies the values for market capitalisation and circulating supply, the calculator instantly updates and recalculates the price target, allowing users to explore different scenarios and make informed decisions.
+By incorporating this default divisible action, my calculator empowers users to quickly assess the potential price of a digital currency based on its market capitalisation and circulating supply, providing valuable insights for their investment strategies.
+
+
+![Final-page-3](/assets/images/screenshots/calc2.png)
+
+
+In addition to the default division action, my calculator application also features a switch toggle that allows users to swap between market capitalisation and price calculations. This switch toggle introduces a dynamic functionality that changes the underlying function used by the calculator.
+When the toggle is activated, it modifies the calculator's behaviour to perform multiplication instead of division. This means that users can now input a price value, and based on this input, the calculator will calculate the corresponding market capitalisation.
+To implement this functionality, I incorporated a checkbox element with a boolean value of true or false. When the checkbox is checked, indicating the user's intention to switch functions, the calculator updates its operation accordingly.
+By offering this switch toggle feature, users have the flexibility to perform both market capitalisation to price and price to market capitalisation calculations using a single calculator. This enhances the versatility and usefulness of the application, catering to a wider range of user needs and preferences.
 
 
 ![Header]()
