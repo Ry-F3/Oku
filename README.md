@@ -216,38 +216,11 @@ The color scheme of Oku takes inspiration from [CoinStats](https://coinstats.app
 The choice to incorporate the color orange was deliberate, as it holds connotations of enthusiasm, creativity, and warmth. Within the context of the website, the vibrant orange color creates an engaging and visually stimulating environment, fostering a sense of energy and excitement related to the world of cryptocurrencies.
 Furthermore, the orange color evokes feelings of optimism and positivity, aligning well with the forward-thinking nature of the cryptocurrency industry. By utilising orange throughout the website, a dynamic and compelling visual identity is established, resonating with users who possess a passion for digital currencies.
 
-
-### **Introductory text**
-
-
-
-![Index introduction]()
-
-### **User feedback**
-
-
-
-### Contact form
-
-
-
 ### **Accessibility**
 
-
-
-## **Design Choices**
-
-### **Font**
-
-
-### **Layout and Structure**
-
-[Balsamiq](https://balsamiq.com/) 
-
-
-
-### **Colour schemes**
-
+To ensure accessibility, I implemented ARIA labels where appropriate within the website. ARIA labels provide additional context and information to assistive technologies, enhancing the overall accessibility of the application.
+Moreover, I prioritised the use of high contrast colors throughout the design to optimise readability. By selecting color combinations with distinct contrast, the content becomes more legible for users with visual impairments or those viewing the website in challenging lighting conditions.
+By incorporating ARIA labels and employing high contrast colors, the website strives to provide an inclusive user experience. Accessibility considerations play a crucial role in ensuring that individuals with diverse needs can navigate and engage with the content effectively.
 
 
 ## **Bugs**
