@@ -3,13 +3,13 @@ let capSwitch = document.getElementById("capSwitch"); // Switching labels
 let priceSwitch = document.getElementById("priceSwitch"); //Switching labels
 let checkBox = document.getElementById("check"); // Checkbox to swtich labels
 
-let message = "";
+
 let price = 0;
 let inputCap = 0;
 let inputSupply = 0;
 
 onload = (event) => {
-    calcDivide()
+    calcDivide();
 };
 
 function calcDivide() { // Calculate price per token
@@ -32,11 +32,11 @@ function calcDivide() { // Calculate price per token
         } else {
             document.getElementById("price").value = price.toFixed(12); // If the price is less than 1 add aditional "0"s
         }
-    } else if (inputCap | inputSupply === 0) {
+    } else if (inputCap || inputSupply === 0) {
         document.getElementById("price").value = 0;
     } else {
         console.log("Please input values");
-    };
+    }
 
     // inputCap.toLocaleString("en-us");
     // console.log(inputCap.toLocaleString("en-us"))
@@ -54,9 +54,9 @@ function calcDivide() { // Calculate price per token
             console.log("keyup");
         } else {
             console.log("continue");
-        };
+        }
 
-     };
+     }
     
 
    function probability() {
@@ -69,7 +69,7 @@ function calcDivide() { // Calculate price per token
         likely.style.display = 'none';
     } else {
         console.log("continue");
-    };
+    }
     
     if (inputCap >= 100000000 && inputCap < 100000000000) {
         let maybe = document.getElementById("maybe");
@@ -86,7 +86,7 @@ function calcDivide() { // Calculate price per token
         console.log("unlikely");
     } else {
         console.log("continue");
-    };
+    }
 
     if (inputCap >= 100000000000000) {
         let impossible = document.getElementById("impossible");
@@ -94,18 +94,18 @@ function calcDivide() { // Calculate price per token
         unlikely.style.display = 'none';
     } else {
         console.log("continue");
-    };
+    }
 
    function barReset() {
   
         likely.style.display = 'none';
         maybe.style.display = 'none';
         unlikely.style.display = 'none';
-   };
+   }
 
-  };
+  }
     
- };
+ }
 
  
 function calcMultiply() {
@@ -123,12 +123,12 @@ function calcMultiply() {
         document.getElementById("price").value = price;
     } else {
         return calcDivide();
-    };
+    }
 
-};
+}
 
 
-const checkbox = document.getElementById('check')
+const checkbox = document.getElementById('check');
 
 
 function calcSwitch() {
@@ -146,8 +146,8 @@ function calcSwitch() {
         console.log("I am multiplying");
         valueReset();
         calcMultiply();
-    };
-};
+    }
+}
 
 function valueReset() { // Reset values of calculator back to default
 
@@ -159,20 +159,9 @@ function valueReset() { // Reset values of calculator back to default
     capEl.value = "";
     price.value = "0";
 
-};
+}
 
 
-//localStorage.setItem("price", price.toFixed(2));
 
 
-// Probability Bar 
 
-function probability() {
-
-
-    if (inputCap > 500000000) {
-        let likely = document.getElementById("likely");
-        likely.style.display = 'block';
-        console.log("hi");
-    };
-};
