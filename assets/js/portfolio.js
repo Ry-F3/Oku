@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
             </div>`;
         idIndex = idIndex +1; // Increment idIndex for the loop to display the HTML * 3
     
-    };
+    }
 
     // Add button
 
     let addButton = document.getElementById("plus_btn"); // Add button, function, which replicates the HTML when clicked
     addButton.addEventListener('click', function () {
-        console.log("click add")
+        console.log("click add");
         let addAsset = document.getElementById("asset");
         let asset = document.createElement("div");
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () { //DOM loads content 
         asset.appendChild(addSpan);
         updateNetWorth();
         updateListeners();
-        updateCloseListeners()
+        updateCloseListeners();
     });
 
     function deleteInput(btn){ // Delete input boxes
