@@ -369,20 +369,38 @@ Developed by **Rhys.Alexander.Few**
 
 ### **Code**
 
+**Peer Review**
+
 * **Adam Boley** 
-    * For looking at my code and giving me suggestions  - [Github](https://github.com/AdamBoley).
+    * Special thanks to my friend for reviewing my code and providing helpful suggestions and feedback.  - [Github](https://github.com/AdamBoley).
 
 <br>
 
-
 * **Antonio Rodriguez** 
-    * Project guidance and showing me how I would use JavaScript for the hamburger toggle in the future.
-
-### **Images**
+    * Special thanks to my mentor for providing valuable guidance and support throughout the development of this project.
 
 
+**Other Resources**
 
-### **Acknowledgements**
+
+**Bibliography:**
+
+* YouTube video tutorial: "Creating a Sidebar Menu with HTML, CSS, and JavaScript" by Traversy Media. Retrieved from: https://www.youtube.com/watch?v=luV9Mso3cHk
+
+* W3Schools code example: "CSS Flexbox Layout" on W3Schools. Retrieved from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+
+* Stack Overflow post: "If checkbox is checked and user clicks on the button, do this" on Stack Overflow. Retrieved from: https://stackoverflow.com/questions/25926556/if-checkbox-is-checked-and-user-clicks-on-the-button-do-this
+
+* W3Schools code example: "Custom Scrollbar Style" on W3Schools. Retrieved from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2
+
+* Stack Overflow post: "Adding numbers in a for loop in JavaScript" on Stack Overflow. Retrieved from: https://stackoverflow.com/questions/11686724/adding-numbers-in-for-loop-javascript
+
+* YouTube video tutorial: "JavaScript Event Listeners on Dynamically Created Elements" by The Net Ninja. Retrieved from: https://www.youtube.com/watch?v=m3StLl-H4CY
+
+Please note that these resources were used for learning and reference purposes during the development of the project, with the exception of the scroll bar and the column template where I copied and pasted the webkit code.
+
+
+
 
 
 
