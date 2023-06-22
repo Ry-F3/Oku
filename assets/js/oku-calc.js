@@ -164,7 +164,6 @@ function updateProbability() {
     impossible.style.display = 'none';
 
     let inputValue;
-    console.log(inputValue)
 
     if (calculationMode === "divide") {
         inputValue = inputCap;
@@ -174,16 +173,12 @@ function updateProbability() {
 
     if (inputValue < 100000000) {
         likely.style.display = 'block';
-        console.log(inputValue)
     } else if (inputValue >= 100000000 && inputValue < 100000000000) {
         maybe.style.display = 'block';
-        console.log(inputValue)
     } else if (inputValue >= 100000000000) {
         unlikely.style.display = 'block';
-        console.log(inputValue)
     } else if (inputValue >= 100000000000000) {
         impossible.style.display = 'block';
-        console.log(inputValue)
     }
 }
 
@@ -198,7 +193,6 @@ function calcMultiply() {
     if (!validateInput()) {
         return;
     }
-    console.log(price)
     barStart();
 }
 
