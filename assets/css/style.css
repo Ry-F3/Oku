@@ -190,7 +190,7 @@ div h2 {
 
 .certain {
     width: 100%;
-    height: 48px;
+    height: -webkit-fill-available;
     background: #ffad63;
 }
 
