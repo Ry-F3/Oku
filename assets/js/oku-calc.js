@@ -182,7 +182,6 @@ function updateProbability() {
     }
 }
 
-
 function calcMultiply() {
     inputCap = parseFloat(document.getElementById("cap-el").value.replace(/,/g, ''));
     inputSupply = parseFloat(document.getElementById("sup-el").value.replace(/,/g, ''));
@@ -196,25 +195,25 @@ function calcMultiply() {
     barStart();
 }
 
-document.getElementById("cap-el").addEventListener('input', function () {
-    formatInputValue();
-    probability();
-    if (calculationMode === "divide") {
-        calcDivide();
-    } else {
-        calcMultiply();
-    }
-});
+// document.getElementById("cap-el").addEventListener('input', function () {
+//     formatInputValue();
+//     probability();
+//     if (calculationMode === "divide") {
+//         calcDivide();
+//     } else {
+//         calcMultiply();
+//     }
+// });
 
-document.getElementById("sup-el").addEventListener('input', function () {
-    formatInputValue();
-    probability();
-    if (calculationMode === "divide") {
-        calcDivide();
-    } else {
-        calcMultiply();
-    }
-});
+// document.getElementById("sup-el").addEventListener('input', function () {
+//     formatInputValue();
+//     probability();
+//     if (calculationMode === "divide") {
+//         calcDivide();
+//     } else {
+//         calcMultiply();
+//     }
+// });
 
 function updateCalculation() {
     if (calculationMode === "divide") {
