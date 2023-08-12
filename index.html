@@ -5,154 +5,214 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Crypto, Digital, Cold Wallets, BlockChain, Price Targets, ROI, Airdrop, Finance, Assets, Portfolio, Money, Trading, Trading View" />
-    <meta name="author" content="Rhys Few"/>
-    <meta name="description" content="Digital Currency Calculator"/>
+    <meta name="keywords"
+        content="Crypto, Digital, Cold Wallets, BlockChain, Price Targets, ROI, Airdrop, Finance, Assets, Portfolio, Money, Trading, Trading View">
+    <meta name="author" content="Rhys Few">
+    <meta name="description" content="Digital Currency Calculator">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <title>Oku</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>| Oku</title>
 </head>
 
 <body>
-    <main class="black">
-        <header>
-            <div class="header">
-                <nav class="primary_font light_black">
-                    <ul>
-                        <li>
-                            <a href="#" class="logo">Oku.</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <span class="nav-logo">
+                        <a href="index.html"><img id="logo" src="assets/images/oku.png" alt="logo"></a>
+                    </span>
+                </li>
+            </ul>
+            <ul>
 
-        <section class="black">
-            <div class="row">
-                <div class="column">
-                    <div class="text_box">
-                        <h1 class="primary_font">Calculate Real Price Targets</h1>
-                        <h2 class="primary_font">Discover the Educational Frontier of Digital<br> Currencies for
-                            Financial Empowerment. <span id="help_icon"><i id="help"
-                                    class="far fa-question-circle"></i></span></h2>
+                <li>
+                    <div class="nav-btn layered-blocks">
+                        <div>
+                            <img class="crypto_logo" src="assets/images/btc.png" alt="">
+                            <span>BTC</span>
+                        </div>
+                        <div class="price-text">
+                            <p>$<span id="bitcoin"></span></p>
+                        </div>
                     </div>
-                </div>
+                </li>
+                <li>
+                    <div class="nav-btn layered-blocks">
+                        <div>
+                            <img class="crypto_logo" src="assets/images/bnb.png" alt="">
+                            <span>BNB</span>
+                        </div>
+                        <div class="price-text">
+                            <p>$<span id="binance"></span></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-btn layered-blocks off">
+                        <div>
+                            <img class="crypto_logo" src="assets/images/doge.png" alt="">
+                            <span>DOGE</span>
+                        </div>
+                        <div class="price-text">
+                            <p>$<span id="dogecoin"></span></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="line">|</span>
+                    <div class="layered-blocks">
+                        <div>
+                            <span class="tag-text">Calculate realistic crypto</span>
+                        </div>
+                        <div>
+                            <span class="tag-text-2">price targets today!</span>
+                        </div>
+                    </div>
 
-                <div class="column">
-                    <div class="box">
-                        <div class="grid_box secondary_font">
-                            <div class="grid_top">
-                                <div id="nav_reset" class="calc_nav">
-                                    <button id="oku-calc" class="btn_active transition nav-button" aria-label="Oku Calc Tab">Oku Calc</button>
-                                    <button id="portfolio" class="btn_click transition nav-button" aria-label="Portfolio Tab">Portfolio</button>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span class="meta-btn">
+                        <a href="https://metamask.io/" target="_blank" rel="noopener noreferrer">
+                            <img id="crypto_logo_meta" src="assets/images/meta_fox.png" alt="Crypto wallet Metamask">
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Calculate Market Cap</h2>
+        <form id="calculator">
+            <div class="box">
+                <div class="grid_box secondary_font">
+                    <div class="grid_top">
+                        <div id="nav_reset" class="calc_nav">
+                            <button id="oku-calc" class="btn_active nav-button" aria-label="Oku Calc Tab">Oku
+                                Calc</button>
+                            <button id="portfolio" class="btn_click nav-button"
+                                aria-label="Portfolio Tab">Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div id="certain" class="certain"></div>
+                        <div id="likely" class="likely"></div>
+                        <div id="maybe" class="maybe"></div>
+                        <div id="unlikely" class="unlikely"></div>
+                        <div id="impossible" class="impossible"></div>
+                    </div>
+                    <div class="grid_input oku-calc">
+                        <div id="hide_box" class="input_wrap">
+                            <label class="input_label tooltip-container" id="capSwitch" for="cap-el">
+                                <span class="tooltip-btn"
+                                    title="Market Cap, short for Market Capitalisation, is a financial metric used to measure the total value or size of a publicly traded company or a cryptocurrency.">Market
+                                    Cap
+                                </span>
+                            </label>
+                            <div class="input_box">
+                                <div class="symbol">
+                                    <span class="oku_icon">$</span>
                                 </div>
-                            </div>
-                            <div class="grid_input oku-calc">
-                                <div id="hide_box" class="input_wrap">
-                                    <label class="input_label" id="capSwitch" for="cap-el">Market Cap</label>
-                                    <div class="input_box">
-                                        <div class="symbol">
-                                            <span>$</span>
-                                        </div>
-                                        <input class="inputCalc" type="text" min="0" max="1000000000000000"
-                                            id="cap-el">
-                                        <div>
-                                            <span>
-                                                <button id="switch" class="btn" aria-label="Switch to price priority and reverse back to marketcap priority">
-                                                    <i class="ri-arrow-up-down-line"></i>
-                                                </button>
+                                <input class="inputCalc" type="text" placeholder="0" id="cap-el"
+                                    autocomplete="off">
+                                <div>
+                                    <span>
+                                        <button id="switch" class="btn"
+                                            aria-label="Switch to price priority and reverse back to marketcap priority">
+                                            <i class="ri-arrow-up-down-line"></i>
+                                        </button>
 
-                                                <input id="check" type="checkbox">
-                                            </span>
-                                        </div>
-                                    </div>
+                                        <input id="check" type="checkbox">
+                                    </span>
                                 </div>
-                            </div>
-                            <div class="grid_input oku-calc">
-                                <div class="input_wrap">
-                                    <label class="input_label" for="sup-el">Circulating Supply</label>
-                                    <div class="input_box">
-                                        <div class="symbol">
-                                            <span>>></span>
-                                        </div>
-                                        <input class="inputCalc" type="text" min="0" max="1000000000000000"
-                                            id="sup-el">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid_input oku-calc">
-                                <div class="input_wrap">
-                                    <label class="input_label" id="priceSwitch" for="price">Price</label>
-                                    <div class="input_box">
-                                        <div class="symbol">
-                                            <span>$</span>
-                                        </div>
-                                        <input class="inputCalc" type="text" value="0" id="price" disabled>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="grid_input portfolio">
-                                <div id="asset" class="input_wrap"></div>
-                                <div class="input_box inputBorder inputBorder_2">
-
-                                    <input id="net_worth" type="number" value="0" disabled>
-                                    <div id="submit_btn" class="submit_style">
-                                        <span id="submit">=</span>
-                                    </div>
-                                    <div>
-                                        <span class="plus" id="plus_btn"><strong class="scale">+</strong></span>
-                                    </div>
-                                </div>
-                                <div class="display">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ducimus cum
-                                    repudiandae consequuntur rem qui. In earum obcaecati itaque vitae debitis iure
-                                    magnam aperiam, ea at, incidunt accusantium, ipsam est.</div>
                             </div>
                         </div>
                     </div>
+                    <div class="grid_input oku-calc">
+                        <div class="input_wrap">
+                            <label class="input_label tooltip-container" id="supSwitch" for="sup-el"><span class="tooltip-btn"
+                                    title="Circulating supply, in the context of cryptocurrencies, it refers to the total number of coins or tokens that are available and actively circulating in the market at a given point in time.">Circulating
+                                    Supply</span>
+                            </label>
+                            <div class="input_box">
+                                <div class="symbol">
+                                    <span class="oku_icon">>></span>
+                                </div>
+                                <input class="inputCalc" type="text" placeholder="0" id="sup-el"
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_input oku-calc">
+                        <div class="input_wrap">
+                            <label class="input_label tooltip-container" id="priceSwitch" for="price">
+                                <span class="tooltip-btn"
+                                    title="The term 'price per coin' refers to the cost of a single unit of a cryptocurrency or a digital asset. It represents the value of one coin or token in a specific currency, such as US dollars (USD) or another cryptocurrency like Bitcoin (BTC) or Ethereum (ETH).">Price</span>
+                            </label>
+                            <div class="input_box">
+                                <div class="symbol">
+                                    <span class="oku_icon">$</span>
+                                </div>
+                                <input class="inputCalc" type="text" value="0" id="price" disabled>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid_input portfolio">
+                        <div id="asset" class="input_wrap"></div>
+                        <div class="input_box inputBorder inputBorder_2">
+
+                            <input id="net_worth" type="number" value="0" disabled>
+                            <div id="submit_btn" class="submit_style">
+                                <span id="submit">=</span>
+                            </div>
+                            <div>
+                                <span class="plus" id="plus_btn"><strong class="scale">+</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <p id="tab_info">
+                            Generate practical price estimates using our Oku Calc today. Simply hover over the headings
+                            to access the relevant data, or explore <a id="link" href="https://www.coingecko.com/" target="_blank">coingecko</a> to uncover the
+                            circulating supply and market cap of your favorite cryptocurrencies. This will help you
+                            gauge potential and achievable outcomes.</p>
+                    </div>
                 </div>
             </div>
 
-
-
-            <div class="bar_box">
-                <div class="bar">
-                    <div id="certain" class="certain"></div>
-                    <div id="likely" class="likely"></div>
-                    <div id="maybe" class="maybe"></div>
-                    <div id="unlikely" class="unlikely"></div>
-                    <div id="impossible" class="impossible"></div>
-                </div>
-                <div class="text_help secondary_font" id="text_display">
-                    <span class="percent">0%</span>
-                    <span class="percent">25%</span>
-                    <span class="percent">50%</span>
-                    <span class="percent">75%</span>
-                    <span class="percent">100%</span>
-                    <p class="info">For the latest trends and insights in the world of digital currencies, we recommend
-                        visiting <a href="https://coinmarketcap.com/.">CoinMarketCap.</a> This trusted platform provides
-                        up-to-date information on prices, market capitalisation, trading volumes, and more. By
-                        leveraging
-                        CoinMarketCap's real-time data, you can experiment with our calculator to set realistic price
-                        targets for different cryptocurrencies. Stay informed, and unlock the
-                        potential of the cryptocurrency market with our Oku!</p>
-                </div>
-            </div>
-
-            <footer>
-                <p class="secondary_font">Rhys Few 2023</p>
-            </footer>
-        </section>
+        </form>
     </main>
 
+    <footer>
+        <div class="social_title">
+            <span class="social_title_1">Keeping us Social</span>
+            <span>|</span>
+            <span id="dev">Developed by Rhys Few @2023</span>
+        </div>
+        <div class="socials">
+            <a class="icons" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a class="icons" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="icons" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="icons" href="https://www.tiktok.com/en/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a class="icons" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a class="icons" href="https://www.reddit.com/" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
+            <a class="icons" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
 
     <script src="assets/js/oku-calc.js"></script>
-    <script src="assets/js/nav.js"></script>
+    <!-- <script src="assets/js/nav.js"></script> -->
     <script src="assets/js/portfolio.js"></script>
-    <script src="assets/js/help.js"></script>
+    <!-- <script src="assets/js/help.js"></script> -->
     <script src="https://kit.fontawesome.com/868033ccb5.js" crossorigin="anonymous"></script>
-</body>
+    <script src="assets/js/ap.js"></script>
 
+</body>
 
 </html>

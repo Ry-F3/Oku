@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Condensed&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,211 +8,317 @@
     text-decoration: none;
     list-style: none;
     user-select: none;
+    vertical-align: top;
 }
 
 body {
-    background-color: #fefefe;
+    font-family: 'Roboto', 'sans-serif', 'Arial', 'Helvetica', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    background-color: #0d0d0d;
+    /* Ensure the body takes at least the full viewport height */
+    background-color: #000000;
 }
 
-/* color chart */
-
-.light_black {
-    background-color: #111d13;
-}
-
-.black {
-    background-color: #0d0d0d;
-}
-
-.orange {
-    background-color: #ff9332;
-}
-
-/* font */
-
-.primary_font {
-    font-family: 'Fira Sans', sans-serif;
-}
-
-.secondary_font {
-    font-family: 'PT Sans', sans-serif;
-}
-
-/* Section color */
-
-section {
-    background-color: #f1f1f1;
-}
-
-/* Style the header */
-.header {
-    text-align: center;
-    font-size: 35px;
-}
-
-/* navbar */
+/* Header bar */
 
 nav {
+    align-items: center;
+    background-color: #0d0d0d;
+    border-bottom: solid 0.5px #f1f1f13f;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    border-bottom: 1px solid #e7e5df38;
+    padding: 12px 24px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    z-index: 100;
 }
 
 nav ul {
-    margin: 15px;
-    line-height: 25px;
+    display: flex;
+    align-items: center;
+
 }
 
-nav ul li a {
-    color: #E7E5DF;
-    font-weight: 400;
+nav li {
+    display: flex;
+    align-items: center;
+
 }
 
-.logo {
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 25px;
+.nav-logo {
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: left;
+
 }
 
-.page {
+.nav-btn {
+    /* Remove the width and padding properties to allow the element to take the necessary width */
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-
+    /* Center the content horizontally */
+    flex-grow: 1;
+    /* Allow the element to grow and take up available space */
 }
 
-.row {
-    display: -webkit-flex;
+.meta-btn {
+    padding: 10px 10px 10px 10px;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Push the content to the right side */
 }
 
-/* Create equal columns */
-.column {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+#logo {
+    width: 50px;
+}
+
+.crypto_logo {
+    width: 15px;
+    height: auto;
+}
+
+#crypto_logo_meta {
+    width: 34px;
+    height: auto;
+}
+
+.layered-blocks {
+    cursor: pointer;
     padding: 10px;
-    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 2px;
 }
 
-/* column 1 */
+.price-text {
+    font-size: 11px;
+    padding-left: 12px;
+    color: #999999;
+}
 
+.line {
+    padding: 12px;
+}
 
-.text_box {
-    margin-left: auto;
-    margin-right: auto;
-    width: 40vw;
-    top: 50px;
+.tag-text {
+    color: #999999;
+    text-align: left;
+}
+
+.tag-text-2 {
+    color: #999999;
+    text-align: left;
+    margin-left: -34px;
+}
+
+main {
+    flex: 1;
+    /* Allow the main section to take the remaining vertical space */
+    padding: 20px;
+    text-align: center;
+}
+
+/* main form for conent */
+
+form {
+    max-width: 378px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+}
+
+/* Oku calc */
+
+/* Style the tooltip container */
+.tooltip-container {
     position: relative;
 }
 
-.text_help {
-    color: white;
-    width: 110%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    height: fit-content;
-    border-radius: 6px;
+/* Style the tooltip text */
+.tooltip-btn::after {
+    content: attr(title);
+    /* Display the 'title' attribute value as the tooltip text */
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    background-color: #999999;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: normal;
+    /* Allow the text to wrap to multiple lines */
+    max-width: 200px;
+    /* Set a maximum width for the tooltip box */
 }
 
-.percent {
-    margin: 50px;
+/* Show the tooltip when hovering over the element */
+.tooltip-btn:hover::after {
+    display: block;
 }
 
-.info {
-    padding: 25px 5px 10px 50px;
+/* Adjust tooltip placement if it goes off the top */
+.tooltip-btn:hover::before {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-bottom-color: transparent;
 }
 
-.info a {
-    color: #ff9332;
+.tooltip-btn:hover::after,
+.tooltip-btn:hover::before {
+    display: block;
+    z-index: 999;
 }
 
-#text_display {
+/* Ensure tooltip doesn't go off the left or right */
+.tooltip-btn:hover::after {
+    /* Add this to adjust the left position if it goes off the left */
+    left: calc(50% + min(-100px, -50%));
+    /* Add this to adjust the left position if it goes off the right */
+    right: calc(50% + min(-100px, 50%));
+}
+
+
+.input_label {
+    width: 150px;
+    display: flex;
+    color: #E7E5DF;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+input {
+    width: 80%;
+    height: 38px;
+    display: flex;
+    padding: 10px;
+    outline: none;
+    margin-left: -4px;
+    margin-top: 0px;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgb(26, 26, 26);
+    color: rgb(241 241 241 / 82%);
+    z-index: 0;
+}
+
+.input_box {
+    display: flex;
+    width: 100%;
+    background: transparent;
+}
+
+
+.grid_box {
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+.grid_top {
+    padding: 10px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.grid_input {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+    padding-top: 20px;
+}
+
+.text_box {
+    padding: 10px;
+    color: #f1f1f175;
+    font-size: 16.5px;
+}
+
+#check {
     display: none;
 }
 
-#help_icon {
-    color: #E7E5DF;
-    padding: 5px 30px 10px 0px;
-    margin: 5px;
-    margin-top: 15px;
+#switch {
+    font-size: 25px;
+    position: absolute;
     cursor: pointer;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 35px;
-    color: #ff9332;
+    background: transparent;
+    border: none;
+    color: #999999;
+    margin-left: 15px;
+    margin-top: 2px;
+    transform: rotate(90deg);
 }
 
+/* Text information with link */
 
-div h1 {
-    font-size: 4em;
-    color: #E7E5DF;
-    letter-spacing: 2px;
+#link {
+    color: #a96a32;
 }
 
-div h2 {
-    font-size: 1.24em;
-    margin-top: 10px;
-    line-height: 25px;
-    letter-spacing: 2px;
-    color: #e7e5dfbd;
-}
-
-
-/* Bar */
-
-.bar_box {
-    width: 50%;
-    height: 290px;
-    position: fixed;
-    bottom: 0;
-    
-
-}
+/* Probability bar */
 
 .bar {
-    width: 80%;
-    height: 38px;
-    border: 2px solid rgb(199, 199, 199);
+    width: 75%;
+    height: 10px;
+    border: 1px solid #eeeeee57;
     position: relative;
     border-radius: 6px;
     overflow: hidden;
+    background: rgb(38 38 38);
     margin-left: auto;
     margin-right: auto;
-    background: #0d0d0d;
-
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .certain {
     width: 100%;
     height: -webkit-fill-available;
-    background: #ffad63;
+
 }
 
 .likely {
     width: 75%;
     height: 48px;
-    background: #ffad63;
+    background: #999999cc;
     display: none;
 }
 
 .maybe {
     width: 50%;
     height: 48px;
-    background: #ffad63;
+    background: #999999cc;
     display: none;
 }
 
 .unlikely {
     width: 25%;
     height: 48px;
-    background: #ffad63;
+    background: #999999cc;
     display: none;
 }
 
@@ -220,72 +327,36 @@ div h2 {
     height: 48px;
 }
 
-
-/* column 2 */
-
-.box {
-    width: 400px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    height: 500px;
-    padding: 15px 10px 40px 50px;
-    overflow-y: scroll;
-    position: absolute;
-    right: 55px;
-}
-
-/* Scroll bar */
-
-::-webkit-scrollbar {
-    width: 3px;
-
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background-color: transparent;
-    margin-top: 150px;
-    margin-bottom: 80px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #E7E5DF;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.062);
+h3 {
+    margin-top: 20px;
 }
 
 .calc_nav {
-    /* small nav */
-    width: 110%;
-    background-color: #0d0d0d;
-    border-radius: 6px;
+    width: 100%;
 }
 
-/* content inside Oku calculator tab */
-
 .symbol {
-    background: #ffad63;
-    border-radius: 3px 0 0 3px;
-    font-weight: 900;
+    background: rgb(51 51 51);
+    border-radius: 3px 0px 0px 3px;
+    font-weight: 100;
     font-size: 25px;
     line-height: 28px;
     text-align: center;
     width: 38px;
-    height: 40px;
+    height: 37.5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #111d13;
+    color: #a96a32;
+    z-index: 1;
 }
 
 .btn_active {
     font-weight: 600;
-    padding: 26px;
+    padding: 0 26px;
     height: 35px;
     line-height: 0;
-    border-radius: 6px;
+    border-radius: 16px;
     border-style: none;
     background-color: #ff9332;
     color: #111d13;
@@ -305,85 +376,23 @@ div h2 {
     font-weight: 600;
 }
 
-.input_label {
-    width: 150px;
-    display: flex;
-    color: #E7E5DF;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
+/* Portfolio */
 
-.input_wrap {
-    width: 90px;
-    display: inline-block;
-    align-self: flex-end;
-    height: auto;
-}
-
-
-.input_box {
-    display: flex;
-    border-bottom: 1px solid #111d138a;
-    width: 250px;
-    background: transparent;
-}
-
-/* Content inside porfolio tab */
-
-.grid_input.portfolio {
+.portfolio {
     display: none;
-    width: 100%;
-
-}
-
-input:focus {
-    outline: none;
-}
-
-input::-webkit-outer-spin-button, /* scroll bar was code used from w3 schools */
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.inputCalc {
-    height: 40px;
-    width: 210px;
-    padding: 8px;
-    border: none;
-    outline: none;
-    background-color: #e7e5df;
-    font-size: 18px;
-    font-weight: 800;
-    border-radius: 0 6px 6px 0px;
-}
-
-.grid_box {
-    display: grid;
-    grid-template-columns: auto;
-    width: 80%;
-    height: 250px;
-}
-
-.grid_top {
-    padding: 10px;
-    font-size: 30px;
-    text-align: right;
-}
-
-.grid_input {
-    padding: 20px;
 }
 
 .pInput {
     /* Portfolio input box */
-    padding: 5px;
+    padding: 12px;
     border: none;
     outline: none;
-    height: 32px;
+    height: 16px;
     border-radius: 0 3px 3px 0;
-    background-color: #e7e5df;
+    margin-top: 10px;
+    width: 155px;
 }
+
 
 .input_label_p {
     width: 150px;
@@ -394,25 +403,20 @@ input::-webkit-inner-spin-button {
     margin-left: 15px;
 }
 
-.inputBorder {
-    border-bottom: none;
-    margin: 10px;
-}
-
 .assetBox {
     width: 80px;
-    background-color: #e7e5df;
+    background-color: transparent;
     border: none;
     outline: none;
-    color: #ff9332;
+    color: #a96a32;
     border-radius: 3px 0 0 3px;
 }
 
 select {
     font-family: 'FontAwesome';
-    font-size: 25px;
-    margin-left: 10px;
-    padding-left: 8px;
+    font-size: 20px;
+    margin-left: 1px;
+    padding-left: 20px;
     cursor: pointer;
     position: relative;
 }
@@ -427,7 +431,7 @@ option {
 
 .plus {
     display: flex;
-    background: #e7e5dfc5;
+    background: #e7e5df;
     border-radius: 3px;
     padding: 5px 10px;
     justify-content: center;
@@ -440,15 +444,12 @@ option {
     height: 30px;
     font-size: 20px;
     width: 30px;
+    margin-top: 12px;
 }
-
-
 
 #net_worth {
     position: relative;
     left: 33px;
-    outline: none;
-    border: none;
     font-size: 15px;
     font-weight: 900;
     text-align: right;
@@ -457,16 +458,24 @@ option {
     width: 169px;
     border-radius: 3px 0 0 3px;
     margin-bottom: 5px;
-    margin-top: 0px;
+    margin-top: 12px;
     height: 30px;
-    background: #e7e5df;
+    z-index: 0;
 }
 
+.pSymbol {
+    /* Close btn */
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-weight: 600;
+    color: #999999cc;
+    cursor: pointer;
 
+}
 
 .submit_style {
     display: flex;
-    background: #e7e5dfc5;
+    background: #999999cc;
     border-radius: 3px;
     padding: 5px 10px;
     height: 30px;
@@ -477,225 +486,270 @@ option {
     color: #111d13;
     cursor: pointer;
     font-size: 20px;
-    margin-right: -4px;
+    margin-right: -5px;
     position: relative;
     right: 10px;
+    margin-top: 12px;
+    z-index: 1;
 
 }
 
-.pSymbol {
-    /* Close btn */
-    background: #e7e5df;
-    border-radius: 3px;
-    padding: 5px 10px;
-    font-weight: 600;
-    color: #111d13;
-    cursor: pointer;
-    margin-left: 5px;
+/* Style the input number field to hide the arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-/* Checkbox hidden for switching content */
+/* Footer content */
 
-#check {
-    position: absolute;
-    width: 40px;
-    right: 50px;
-    visibility: hidden;
-    cursor: pointer;
+.social_title {
+    font-size: 14px;
+    padding: 5px 0 2px 0px;
 }
 
-#switch {
-    font-size: 35px;
-    position: absolute;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    color: #eee;
-    margin-left: 15px;
+.social_title_1 {
+    padding: 0 5px 0 0;
 }
 
-/* Style the footer */
-.footer {
+.socials {
+    font-size: 22px;
     padding: 20px;
-    margin-right: 10px;
-    text-align: right;
-    position: fixed;
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    color: #E7E5DF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+#dev {
+    font-size: 12px;
+    padding: 0 0 0 5px;
+    line-height:  18px;
+}
+
+.icons {
+    padding: 9px;
+}
+
+.icons:hover {
+    color: #a96a32;
+    transition: all 20ms;
+}
 
 footer {
-    color: #E7E5DF;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    padding: 20px;
     background-color: #0d0d0d;
-    text-align: right;
-    position: fixed;
-    bottom: 0;
+    color: #999999;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
 }
 
-/* Responsive layout  */
-@media (min-width: 1400px) {
-    .text_box {
-        width: 44vw;
-        margin-right: 0;
-    }
-
-    div h1 {
-        font-size: 5.5em;
-    }
-
-    div h2 {
-        font-size: 2.5em;
-        line-height: normal;
-    }
-
-    .bar_box {
-        width: 59%;
-        top: 65%;
-    }
-
-    .percent {
-        margin: 80px;
-    }
-
-    .info {
-        padding: 20px 10px 10px 80px;
-        width: 85%;
-    }
-
-    .bar {
-        height: 57px;
-        width: 84%;
-    }
-
-    .grid_input {
-        padding: 36px;
-    }
-
-    #help_icon {
-        font-size: 25px;
-    }
+footer a {
+    color: #999999af;
+    text-decoration: none;
+    margin: 0 10px;
 }
+
+
+
+
+@media (min-width: 1281px) {
+
+    .crypto_logo {
+        width: 18px;
+    }
+
+    .layered-blocks {
+        font-size: 15px;
+    }
+
+
+}
+
 
 @media (max-width: 1280px) {
-    
-    .info {
-        font-size: 13px;
+
+    .crypto_logo {
+        width: 16px;
     }
+
+    .layered-blocks {
+        font-size: 15px;
+    }
+
+
 }
 
+@media (max-width: 571px) {
 
-@media (max-width: 850px) {
-    .row {
-        -webkit-flex-direction: column;
-
-        flex-direction: column;
+    .layered-blocks {
+        padding: 0px;
     }
 
-    .text_box {
-        width: 65vw;
+    #crypto_logo_meta {
+        width: 45px;
     }
 
-    div h1 {
-        font-size: 4.5em;
-    }
-
-    .box {
-        position: relative;
-        right: 0;
-        margin-top: 80px;
-    }
-
-    .bar_box {
-        height: 105px;
-        width: 96%;
-        background-color: #0d0d0d;
-    }
-
-    footer {
-        text-align: center;
-    }
 }
 
-@media (max-width: 440px) {
-    .box {
-        margin-top: 34px;
-    }
-    
-    .text_box {
-        margin-left: auto;
-        margin-right: auto;
-        width: 239px;
-        top: 50px;
-        position: relative;
+@media (max-width: 500px) {
+
+    .layered-blocks {
+        padding: 0px;
     }
 
-    div h1 {
-        font-size: 2em;
+    .tag-text {
+        display: none;
     }
 
-    div h2 {
-        font-size: 1em;
+    .tag-text-2 {
+        display: none;
     }
 
-    .box {
-        width: 366px;
-    }
 
-    .bar_box {
-        width: 100%;
-        height: 68px;
-        bottom: 32px;
-    }
+}
 
-    .bar {
-        width: 80%;
-        height: 38px;
-        border: 2px solid rgb(199, 199, 199);
-        position: relative;
-        border-radius: 6px;
-        overflow: hidden;
-        margin-left: auto;
-    }
+@media (max-width: 412px) {
 
     .calc_nav {
-        width: 100%;
-
+        width: 90%;
     }
 
-    .grid_input {
-        padding: 25px 15px 0px 0px;
+    .text_box {
+        font-size: 12px;
+        word-break: break-all;
+        max-width: 340px;
+    }
+
+}
+
+@media (max-width: 396px) {
+    .portfolio-active .grid_input {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @media (max-width: 378px) {
+    #logo {
+        width: 42px;
+    }
+
+    .crypto_logo {
+        width: 10px;
+        height: auto;
+    }
+
+    #crypto_logo_meta {
+        width: 40px;
+    }
+
+    .line {
+        padding: 10px 5px 10px 10px;
+    }
+
+    .portfolio-active .grid_input {
+        padding-left: 2px;
+    }
+
+    .off {
+        display: none;
+    }
+
+  }
+
+  @media (max-width: 320px) {
+
+    #crypto_logo_meta {
+        width: 32px;
+    }
+
+    .meta-btn {
+        padding: 10px 10px 10px 15px;
     }
 
     #switch {
-        top: 35px;
+        font-size: 18px;
     }
 
-    .box2 {
-        width: 100%;
-        overflow: hidden;
-        height: 500px;
-        position: absolute;
-        z-index: -20;
+    .oku_icon {
+        font-size: 15px;
     }
 
-    /* Scroll Bar */
-
-    ::-webkit-scrollbar-track {
-        margin-top: 150px;
-
+    .calc_nav {
+        width: 90%;
     }
+
+    .text_box {
+        max-width: 250px;
+    }
+
+    .input_box {
+        width: 94%;
+    }
+
+    #net_worth {
+        left: 17px;
+    }
+
+    .submit_style {
+        right: 26px;
+    }
+
+    .plus {
+        right: 15px;
+        position: relative;
+    }
+
+    
+
 }
 
+@media (max-width: 319px) {
 
-@media (max-width: 370px) {
-    .box {
-        right: 23px;
+
+    .assetBox {
+        width: 68px;
     }
+
+    .calc_nav {
+        width: 95%;
+    }
+
+    .grid_input {
+        padding-left: 23px;
+        padding-right: 33px;
+    }
+
+    .input_label {
+        font-size: 12px;
+    }
+
+    #net_worth {
+        width: 135px;
+    }
+    
+    input {
+        font-size: 12px;
+    }
+
+    .portfolio-active .grid_input {
+        padding-left: 0px;
+    }
+
+    .pInput {
+        width: 124px;
+    }
+
+    .btn_click {
+        font-size: 11px;
+    }
+
+    .btn_active {
+        font-size: 12px;
+    }
+
+    .text_box {
+        max-width: 259px;
+    }
+
 }

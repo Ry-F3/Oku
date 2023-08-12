@@ -12,15 +12,15 @@
 ## **Background**
 
 
-Project Oku is a crypto calculator designed to address the needs of traders in the cryptocurrency market. It aims to provide users with the tools to evaluate price targets and calculate the value of their assets. This readme file serves as a guide to understanding the purpose and functionality of Project Oku.
+Project Oku is a crypto calculator designed to address the needs of traders in the cryptocurrency market. It aims to provide users with the tools to discover realistic price targets and to calculate the value of their assets. This readme file serves as a guide to understanding the purpose and functionality of Oku.
 
 **Market Dynamics and the Need for a Price Target Crypto Calculator:**<br>
-Financial markets, including the cryptocurrency market, operate in cycles characterized by periods of bullish and bearish sentiment. Greed drives the market during bull runs, while fear dominates during bearish periods. In the realm of cryptocurrencies, many individuals seek quick wealth without fully understanding the underlying mathematics and technical analysis.
+Financial markets, including the cryptocurrency market, operate in cycles characterised by periods of bullish and bearish sentiment. Greed drives the market during bull runs, while fear dominates during bearish periods. In the realm of cryptocurrencies, many individuals seek quick wealth without fully understanding the underlying mathematics and technical analysis.
 
-Oku aims to fill this gap by offering a comprehensive calculator specifically tailored for the cryptocurrency market. By incorporating essential factors such as circulating supply and market capitalization, the calculator assists traders in setting realistic price targets and making informed investment decisions based on quantitative analysis.
+Oku's objective is to bridge this gap by providing a specialised calculator tailored for the cryptocurrency market, specifically focusing on determining a realistic price per coin. By factoring in crucial variables such as circulating supply and market capitalization, this calculator empowers traders to swiftly manipulate numeric values, providing them with a clear visualisation in the form of a probability bar. This approach intentionally avoids promoting certainty, recognizing the absence of certainties in financial markets, especially in light of unforeseen events like black swan events. The aim is to assist newcomers in making wiser investment decisions. This is particularly important as many 'influencers' on social media often spread misinformation about price points, such as predicting XRP reaching $100 per coin. Such predictions are entirely unrealistic, given the total crypto market cap of $1 trillion, and for XRP to reach $100, its market cap alone would need to be $5 trillion.
 
 **Understanding Circulating Supply and Market Capitalisation:**<br>
-When analyzing a digital currency, it is crucial to consider its circulating supply and whether it is capped or not. This distinction determines whether the currency is deflationary, like Bitcoin with a limited supply, or inflationary, similar to fiat currencies such as the US dollar. Fiat currencies can be continuously printed through policies like quantitative easing and are not backed by gold.
+When analysing a digital currency, it is crucial to consider its circulating supply and whether it is capped or not. This distinction determines whether the currency is deflationary, like Bitcoin with a limited supply, or inflationary, similar to fiat currencies such as the US dollar. Fiat currencies can be continuously printed through policies like quantitative easing and are not backed by gold.
 
 **To calculate the price of a cryptocurrency, divide its market capitalisation by the circulating supply:**<br>
 
@@ -52,9 +52,9 @@ Oku provides a valuable tool for traders in the cryptocurrency market by offerin
 
 **Mobile Responsiveness:** <br> Ensure that the calculator is responsive and compatible with different screen sizes and devices, allowing users to access and utilise it conveniently on both desktop and mobile platforms.
 
-**Testing and Validation:** <br> Thoroughly test the calculator's functionality and validate the results against known values. Implement unit tests to ensure accurate calculations and a reliable user experience.
+**Testing and Validation:** <br> Ensure thorough testing of the calculator's functionality and validate the results by comparing them against established values. Implement unit tests to guarantee precise calculations and a dependable user experience. For example, utilise event key triggers to prevent the appearance of exponential notation values, such as 'e' or 'E', and specified characters like '/', '.', '-', '[', ']', '{', '}', '<', '>', which are commonly used in scientific notation (e.g., "1E+10" represents 1 multiplied by 10 to the power of 10). This proactive approach helps maintain accuracy in calculations and enhances user interaction.
 
-By considering these factors and implementing the necessary functionalities, the JavaScript-based Project, Oku calculator will provide traders with a valuable tool for evaluating price targets and calculating asset values in a variety of markets.
+By considering these factors and implementing the necessary functionalities, the JavaScript-based Oku calculator will provide traders with a valuable tool for evaluating realistic price targets and calculating individual net worth based on their assets.
 
 
 ## **Audience**
@@ -85,23 +85,22 @@ Whether they are experienced traders, long-term investors, crypto enthusiasts, n
 2. I input the circulating supply and market capitalization of the cryptocurrency I am interested in.
 Oku instantly calculates the corresponding price based on the provided data.
 
-3. I can evaluate the feasibility of my desired price target by comparing it with the current market conditions and the cryptocurrency's fundamentals.
+3. I can evaluate the feasibility of my desired price target by checking the probability bar.
 
 4. If needed, I can adjust the input values to explore different scenarios and understand the impact on the price calculation.
 
-5. Oku also provides a color chart probability counter that visually represents the likelihood of achieving the desired price target. This feature adds an additional layer of analysis, allowing me to gauge the probability of success based on the inputted values. (This is an intention but depends on the development process for the project on its feasibility).
+5. There is a link to coingecko so that I can check data points in relation to my favourite cryptocurrency projects.
 
-6. Additionally, Oku provides a feature that allows me to calculate the value of my cryptocurrency assets. I can input the quantity of each cryptocurrency I hold, and the calculator determines their total value based on current prices.
+6. Additionally, Oku provides a feature that allows me to calculate the value of all my assets and total my net worth.
 
-7. I can also consider the market dynamics and fundamentals suggested by Oku while setting realistic price targets and making investment decisions.
+7. I can visually see live price information for some of the top cryptocurrencies. 
 
-8. Oku ensures that I have a quantitative analysis tool at my disposal, empowering me to make more informed decisions in the volatile cryptocurrency market.
+8. Oku ensures that I have an experimental calculator tool to help me make more informed financial decisions.
 
 
 ## **Wireframes**
 
-Originally, my wireframes showcased a highly stylized representation of my website. 
-However, as the development process advanced, the growing urgency of incorporating responsive design necessitated substantial modifications. It became evident that the initial design would have imposed limitations, prompting a wise decision to pursue a seamless and adaptable design approach. Consequently, significant changes were made to ensure a responsive and user-friendly experience across various devices.
+In the initial stages, my wireframes showcased a highly stylized representation of the website, drawing heavy inspiration from the visual language of [Solomia Kravets](https://dribbble.com/shots/16754003--buy-exchange-cryptocurrency-website). As the development process evolved over time and progressed through multiple iterations, the need for responsive design became increasingly urgent. This realisation prompted significant modifications to the original design, driven by the recognition that the initial approach would impose limitations. A wise decision was made to embrace a seamless and adaptable design strategy, ensuring a responsive and user-friendly experience across a diverse range of devices. The strong colour palette and visually directive messaging, influenced by coinstats.com, have been integral to shaping the evolving design.
 
 
 **Homepage (Desktop):**<br>
@@ -116,13 +115,13 @@ In addition to outlining the current functionality of Oku, I acknowledge that th
 
 1. **Refined User Interaction:** The focus is to further refine the user interface and interaction of Oku, making it more intuitive and user-friendly. By continuously optimising the design and user flow, whilst aiming to make what  the user needs to do more clear.
 
-2. **Real-Time Data Integration:** A valuable enhancement would involve integrating an API to provide real-time data on cryptocurrency prices, market trends, and other relevant information. This integration will ensure that users have access to the most up-to-date and accurate data within the application.
+2. **Real-Time Data Integration:** A valuable enhancement would involve integrating an API to provide real-time data on cryptocurrency prices, market trends, and other relevant information. This integration will ensure that users have access to the most up-to-date and accurate data within the application.<strong>(Not fully realised but appropriate links are given).</strong>
 
-3. **Email Data Sharing:** To enhance convenience and flexibility, a feature that allows users to easily send their portfolio data or other relevant information via email can be implemented. This will enable users to securely share their data with themselves or others, facilitating collaboration and analysis.
+3. **Email Data Sharing:** To enhance convenience and flexibility, a feature that allows users to easily send their portfolio data or other relevant information via email can be implemented. This will enable users to securely share their data with themselves or others, facilitating collaboration and analysis. <strong>(Not yet included).</strong>
 
-4. **Login System with User Profiles:** By implementing a login system with personalised user profiles, Oku could offer a more tailored experience. This will allow users to securely access their personal accounts, save preferences, and store their portfolio information for seamless usage across devices.
+4. **Login System with User Profiles:** By implementing a login system with personalised user profiles, Oku could offer a more tailored experience. This will allow users to securely access their personal accounts, save preferences, and store their portfolio information for seamless usage across devices. <strong>(Not yet included).</strong>
 
-5. **Advanced Probability Feature:** The aim is to enhance the existing probability feature by incorporating advanced algorithms or data analysis techniques. This improvement will make the calculations more accurate and reliable, providing users with more meaningful insights and predictions.
+5. **Advanced Probability Feature:** The aim is to enhance the existing probability feature by incorporating advanced algorithms or data analysis techniques. This improvement will make the calculations more accurate and reliable, providing users with more meaningful insights. <strong>(Not yet included).</strong>
 
 These ideas serve as potential future works for Oku, reflecting my commitment to continuously improve the application and meet the evolving needs of the users.
 
@@ -136,58 +135,130 @@ As a result, I simplified the design of my calculator application, placing empha
 
 While the stylised design inspired by Solomia Kravets initially intrigued me, I chose to simplify it to align with the core objective of the project – delivering a robust and functional JavaScript application. The simplified design allows users to focus on the calculator's core functionality, ensuring a seamless and efficient user experience.
 
-**Screenshots of the final pages below:**
+## **Layout**
+
+![Inspiration](/assets/images/screenshots/coinstats-inpiration.png)
+
+I found further inspiration for the design and functionality of my page from the swap page on CoinStats. This source served as a valuable reference, allowing me to create a clean and responsive page that accommodates a diverse range of devices seamlessly. The layout and structure from the CoinStats swap page worked perfectly, enabling me to effectively house and integrate both functionalities of my application.
 
 <br>
 
-![Final-page-1](/assets/images/screenshots/homepage1.png)
+## **Screenshots of the final pages below:**
 
 <br>
 
-![Final-page-2](/assets/images/screenshots/homepage2.png)
+**Landing Page**
+
+![Final-page-1](/assets/images/screenshots/home.png)
 
 <br>
 
-![Final-page-3](/assets/images/screenshots/assetspage.png)
+**Portfolio**
+
+![Final-page-2](/assets/images/screenshots/home-portfolio.png)
+
+<br>
+
 ## **Features**
 
 ### **Calculator** 
 
 ![Calculator-divide](/assets/images/screenshots/calc.png)
 
-In my application, the default action of the calculator is set to division. This means that when the user interacts with the calculator, it automatically performs a division operation using the market capitalisation and circulating supply values provided.
-By taking the market capitalisation and circulating supply as inputs, the calculator applies the division operation to calculate a price target for the digital currency. This default functionality offers users a quick and convenient way to estimate the approximate price of a cryptocurrency based on these key factors.
-To achieve this, I employ JavaScript functions and utilise keyup and keydown event listeners to capture user input in real-time. As the user enters or modifies the values for market capitalisation and circulating supply, the calculator instantly updates and recalculates the price target, allowing users to explore different scenarios and make informed decisions.
-By incorporating this default divisible action, my calculator empowers users to quickly assess the potential price of a digital currency based on its market capitalisation and circulating supply, providing valuable insights for their investment strategies.
+My cryptocurrency price calculator is designed to help users estimate the price of a digital currency based on two essential factors: market capitalization and circulating supply. By default, the calculator performs division using the provided values, enabling users to quickly assess potential prices.
+
+```javascript
+let calculationMode = "divide";
+```
+
+This example was used to create a flag to track the initial calculation mode, which can be changed at the user’s discretion.
+
+As the user interacts with the calculator, the price target updates in real-time. This dynamic experience allows users to explore different scenarios and make well-informed investment decisions.
+
+```javascript
+document.getElementById("cap-el").addEventListener('input', function (event) {
+    // Format input values
+    formatInputValue(event);
+    
+    // Update calculation based on current mode
+    if (calculationMode === "divide") {
+        calcDivide();
+        // Also update probability visualization
+        updateProbability();
+        barStart();
+    } else {
+        calcMultiply();
+    }
+});
+```
 
 
-![Calculator-multiply](/assets/images/screenshots/calc2.png)
+To switch between calculation modes (division and multiplication), users can interact with the application’s switch toggle. This feature enhances the calculator's versatility, allowing users to tailor their assessment method. 
 
 
-In addition to the default division action, my calculator application also features a switch toggle that allows users to swap between market capitalisation and price calculations. This switch toggle introduces a dynamic functionality that changes the underlying function used by the calculator.
-When the toggle is activated, it modifies the calculator's behaviour to perform multiplication instead of division. This means that users can now input a price value, and based on this input, the calculator will calculate the corresponding market capitalisation.
-To implement this functionality, I incorporated a checkbox element with a boolean value of true or false. When the checkbox is checked, indicating the user's intention to switch functions, the calculator updates its operation accordingly.
-By offering this switch toggle feature, users have the flexibility to perform both market capitalisation to price and price to market capitalisation calculations using a single calculator. This enhances the versatility and usefulness of the application, catering to a wider range of user needs and preferences.
+```javascript
+// Switch between division and multiplication modes
+function calcSwitch(event) {
+// Prevent the form from submitting
+event.preventDefault();
+
+// Toggle calculation mode
+if (checkBox.checked) {
+// Switch to multiplication mode
+calculationMode = "multiply";
+// ... Add event listeners and update UI elements accordingly
+} else {
+// Switch to division mode
+calculationMode = "divide";
+// ... Add event listeners and update UI elements accordingly
+}
+
+// Reset input values and recalculate
+valueReset();
+barStart();
+}
+``` 
+
+To accommodate future project iterations, I've chosen to use the form element in the HTML, as it allows for more extensive functionalities, such as sending results to the user's email address. This choice required me to prevent the default form submission behavior in the early stages, as the calculator's immediate response to user input is crucial for a seamless experience.
 
 
-### **Information and probability bar**
+### **Probability bar**
 
-![Probability-bar](/assets/images/screenshots/info.png)
+#### **Likely**
 
-As part of my application, I incorporated a visually appealing probability bar graphic to represent the likelihood of achieving the desired price target. This dynamic bar provides users with a visual representation that scales based on the inputted data.
-The probability bar ranges from 0% to 100%, with the top end indicating a certain likelihood of reaching the price target. As users input the relevant data, such as market capitalisation, circulating supply, or other factors, when switched, the bar dynamically adjusts, scaling down to 0% probability as the inputted data deviates from the target.
-While the current implementation provides a basic representation, I am eager to explore more advanced concepts in data structures and algorithms to enhance the accuracy of the probability calculation. By considering potential outliers and incorporating complex calculations, the probability bar can offer users a more comprehensive and precise assessment of the likelihood of achieving their price target.
-In future iterations, I aim to delve deeper into data structures and leverage statistical analysis techniques to refine the probability bar functionality. This will enable the application to account for a wider range of variables, ultimately providing users with a more nuanced and accurate representation of the probability of attaining their desired price target.
+As a part of my application, I've integrated a visual probability bar graphic that represents the likelihood of reaching the desired price target. This bar scales from 25% to 75%, deliberately excluding the extreme ends to acknowledge the absence of certainties or impossibilities in the ever-fluctuating cryptocurrency markets.
 
+<br>
 
-To access the  probability bar and explore its functionality, users can simply click on the question mark icon within the application. Clicking the question mark reveals not only the probability bar but also provides basic information on how they can utilise websites like CoinMarketCap to assess various digital currencies and their corresponding values, as well as other essential factors.
-CoinMarketCap and similar platforms offer a wealth of information on cryptocurrency market trends, historical data, market capitalisation, circulating supply, and more. By leveraging these websites, users can gain insights into the performance and potential of different digital currencies, aiding them in making informed investment decisions.
-The question mark icon serves as a gateway to both the probability bar and the guidance on utilising platforms like CoinMarketCap. By clicking on it, users can access the displayed information and tools that enhance their understanding of the cryptocurrences and assist them in exploring the market's vast possibilities.
+![Probability-bar](/assets/images/screenshots/likely.png)
 
+<br>
+
+#### **Maybe**
+
+As users input data such as market capitalization, circulating supply, or other relevant factors, the probability bar dynamically adjusts. It scales down toward the 25% mark when the inputted data deviates from the target, reflecting the inherent uncertainty in predicting cryptocurrency prices.
+
+<br>
+
+![Probability-bar](/assets/images/screenshots/maybe.png)
+
+<br>
+
+#### **Unlikely**
+
+While the current implementation offers a fundamental representation, I'm eager to explore advanced concepts in data structures and algorithms to enhance the accuracy of the probability calculation. By considering potential outliers and incorporating complex calculations, the probability bar can provide users with a more comprehensive and precise assessment of the likelihood of achieving their price target.
+
+<br>
+
+![Probability-bar](/assets/images/screenshots/unlikely.png)
+
+<br>
+
+In future iterations, I aim to dive deeper into data structures and leverage statistical analysis techniques to refine the probability bar functionality. This approach will enable the application to account for a broader range of variables, ultimately offering users a more nuanced and accurate representation of the probability of attaining their desired price target within a more realistic range.
 
 ## **Portfolio** 
 
-![asset-calculator](/assets/images/screenshots/assetcalc.png)
+![asset-calculator](/assets/images/screenshots/portfolio.png)
 
 A convenient feature in my application is the presence of a small navigation bar below the main header. This navigation bar enables users to easily toggle between the Oku Calc and Portfolio Calculator section. To enhance customisation, I incorporated a dropdown menu that allows users to select different icons that best represent their assets. By utilising JavaScript's addition operation in conjunction with another function, the application calculates the user's net worth.
 The tabs within the navigation bar can be added or removed based on the user's preference, offering flexibility and adaptability. To achieve this functionality, I implemented a loop that utilises the querySelector to iterate through each input field and detect values that are above zero. This allows the application to dynamically update the net worth calculation based on the user's inputs.
@@ -198,32 +269,37 @@ With my mentor's guidance, I explored different approaches and solutions to achi
 The mentor's role was pivotal in this process, offering guidance, suggestions, and insights into effective techniques. They shared their expertise, pointing me in the right direction while encouraging independent problem-solving. By collaborating with my mentor, I was able to learn from their experience and successfully implement the desired functionality in my application.
 Encountering and resolving this scenario not only expanded my technical skills but also emphasised the importance of seeking guidance and leveraging the knowledge of mentors. Their support and guidance empowered me to overcome challenges and deliver a robust, user-friendly solution.
 
-![asset-calculator](/assets/images/screenshots/scroll.png)
-
-In order to enable a scroll bar for mobile devices in my application, I encountered a slight challenge. To address this, I implemented a div element with dummy text using Lorem Ipsum. This approach helped create the appearance of additional height and provided room for the content to be scrollable. Although adjusting the height directly didn't yield the desired outcome, incorporating the div element allowed users to scroll if they added more assets to the tab.
-During the implementation process, I experimented with various techniques to achieve a scrollable interface for mobile devices. While it initially posed some clunkiness, the addition of the div element with placeholder text effectively created the necessary conditions for the scroll bar to function properly.
-By incorporating this workaround, users can now seamlessly scroll through the content within the tab, ensuring a smooth and intuitive experience, especially when they have numerous assets to manage.
-In the future, I plan to explore alternative approaches and refine the implementation to further optimise the scrolling behaviour on mobile devices.
-
-The scrollbar's basic styling came from [W3 Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2), but this was adjusted to flow with the application's visual style.
-
 ## **Favicon** 
 
-I incorporated a favicon into the website, using a cutout from the previous website design. The orange color of the favicon complements the overall style of the website, creating a cohesive visual experience.
+I incorporated a favicon into the website, which was created using [Canva](https://www.canva.com/).
 
 ### **Unified colour scheme**
 
 ![Unified colour scheme](/assets/images/screenshots/coinstats.png)
 
-The color scheme of Oku takes inspiration from [CoinStats](https://coinstats.app/) and prominently features the color orange (#ff9332) to convey specific communication of its features.
-The choice to incorporate the color orange was deliberate, as it holds connotations of enthusiasm, creativity, and warmth. Within the context of the website, the vibrant orange color creates an engaging and visually stimulating environment, fostering a sense of energy and excitement related to the world of cryptocurrencies.
-Furthermore, the orange color evokes feelings of optimism and positivity, aligning well with the forward-thinking nature of the cryptocurrency industry. By utilising orange throughout the website, a dynamic and compelling visual identity is established, resonating with users who possess a passion for digital currencies.
+Oku's color palette draws inspiration from CoinStats and thoughtfully integrates the color orange (#ff9332) for clear communication of its features. While we've leveraged colors from CoinStats, we've also made modifications to enhance user accessibility across various elements of the platform.
+
+* Navigation background: #0d0d0d
+    * Text color: #999999
+* Small navigation contrast buttons: #ff9332 (to highlight essential actions)
+* Main form body: #1a1a1a (provides a comfortable reading experience)
+    * Form label colour: #E7E5DF (for clear form field identification)
+    * Form info text colour: #f1f1f175 (subdued text for better contrast)
+    * Info link text colour: #a96a32 (to attract user attention)
+    * Probability bar colour: #999999cc (semi-transparent grey for subtlety)
+* Tooltip background: #999999
+    * Tooltip text colour: #fff
+* Footer background: #0d0d0d
+    * Footer text: #999999af (slightly subdued to maintain readability)
+    * Footer icon hover colour: #a96a32 (for interactive visual feedback)
+
+The primary use of the vibrant orange colour creates a dynamic and engaging environment, signifying enthusiasm, creativity, and warmth. This resonates well with the cryptocurrency industry's forward-thinking nature, evoking feelings of optimism and positivity. By carefully selecting and adapting colours, we've established a visually appealing design that remains accessible and functional, ensuring a captivating and inclusive experience for users who share a passion for digital currencies.
 
 ### **Accessibility**
 
 To ensure accessibility, I implemented ARIA labels where appropriate within the website. ARIA labels provide additional context and information to assistive technologies, enhancing the overall accessibility of the application.
-Moreover, I prioritised the use of high contrast colors throughout the design to optimise readability. By selecting color combinations with distinct contrast, the content becomes more legible for users with visual impairments or those viewing the website in challenging lighting conditions.
-By incorporating ARIA labels and employing high contrast colors, the website strives to provide an inclusive user experience. Accessibility considerations play a crucial role in ensuring that individuals with diverse needs can navigate and engage with the content effectively.
+Moreover, I prioritised the use of high contrast colours throughout the design to optimise readability. By selecting colour combinations with distinct contrast, the content becomes more legible for users with visual impairments or those viewing the website in challenging lighting conditions.
+By incorporating ARIA labels and employing high contrast colours, the website strives to provide an inclusive user experience. Accessibility considerations play a crucial role in ensuring that individuals with diverse needs can navigate and engage with the content effectively.
 
 
 ## **Bugs**
@@ -294,11 +370,11 @@ By incorporating ARIA labels and employing high contrast colors, the website str
 | ------------------------------------------------------------------ |:---------------------------------------------|
 As a user, I want to be able to calculate the price target for a digital currency based on its market cap and circulating supply, so I can make informed investment decisions. | The application provides a calculator where users can enter the market cap and circulating supply of a digital currency. The calculator then calculates the price target for the currency and displays it to the user. This enables users to make informed investment decisions based on the calculated price target. 
 As a user, I want the option to switch between calculating the market cap and calculating the price based on the entered values, so I can have flexibility in my calculations. | The application includes a toggle switch that allows users to switch between calculating the market cap and calculating the price. When the toggle is switched to the market cap mode, the calculator updates its functionality to calculate the market cap based on the entered values. This provides users with the flexibility to perform different types of calculations based on their needs.
-As a user, I want to be able to add and remove inputs in the portfolio calculator, so I can track the performance of multiple assets simultaneously. | The portfolio calculator section of the application allows users to dynamically add and remove inputs for different assets. Users can easily add new assets by clicking the "Add Input" button and remove existing assets by clicking the "Remove" button next to each input. This feature enables users to track the performance of multiple assets simultaneously in their portfolio.
-As a user, I want the probability bar to accurately reflect the likelihood of achieving a price target, so I can gauge the potential success of my investments. | The probability bar in the application visually represents the likelihood of achieving a price target. As users enter values and calculate the price target, the bar dynamically adjusts to reflect the probability of reaching the target. The bar scales from 0% to 100%, with the top end representing certainty. This provides users with a visual representation to gauge the potential success of their investments based on the calculated probability.
+As a user, I want to be able to add and remove inputs in the portfolio calculator, so I can total my net worth. | The portfolio calculator section of the application allows users to dynamically add and remove inputs for different assets. Users can easily add new assets by clicking the "Add Input" button and remove existing assets by clicking the "Remove" button next to each input. This feature enables users to realise their net worth.
+As a user, I want the probability bar to accurately reflect the likelihood of achieving a price target, so I can gauge the potential success of my investments. | The probability bar in the application visually represents the likelihood of achieving a price target. As users enter values and calculate the price target, the bar dynamically adjusts to reflect the probability of reaching the target. The bar scales from 25% to 75%.. This provides users with a visual representation to financially inform users on feasibility.
 As a user, I want the website to be responsive and accessible on different devices and screen sizes, so I can use it conveniently on desktop and mobile devices. | The website is designed to be responsive and accessible across various devices and screen sizes. It adapts its layout and components to ensure a seamless user experience on both desktop and mobile devices. Users can conveniently access and use the calculator on their preferred device without any usability or display issues.
-As a user, I want the website colors to have high contrast and be visually appealing, so I can easily read and understand the content. | The website color scheme prioritises high contrast and readability. The chosen colors provide a visually appealing and engaging experience while ensuring that the content remains easily readable. This enhances the user's ability to understand the information and calculations presented on the website.
-As a user, I want the website to load quickly and efficiently, so I can access the calculator without delay. | The website is optimised for fast loading and efficient performance. It follows best practices for code optimization and utilizes appropriate caching techniques. This ensures that users can access the calculator and other functionalities without experiencing significant delays or slow loading times.
+As a user, I want the website colours to have high contrast and be visually appealing, so I can easily read and understand the content. | The website colour scheme prioritises high contrast and readability. The chosen colours provide a visually appealing and engaging experience while ensuring that the content remains easily readable. This enhances the user's ability to understand the information and calculations presented on the website.
+As a user, I want the website to load quickly and efficiently, so I can access the calculator without delay. | The website is optimised for fast loading and efficient performance. It follows best practices for code optimization and utilises appropriate caching techniques. This ensures that users can access the calculator and other functionalities without experiencing significant delays or slow loading times.
 As a user, I want the website to provide clear instructions and explanations on how to use the calculator, so I can easily understand its features and functionality. | The website includes clear instructions and explanations on how to use the calculator. There is a prominently displayed "Help" or "Instructions" section that users can access to get detailed guidance on using the calculator. This helps users understand the features and functionality of the calculator, enabling them to use it effectively for their calculations.
 
 
@@ -333,7 +409,7 @@ Remove Input: Bitcoin | Net Worth: $500 | Remove an asset (Bitcoin) from the por
  
 **Porfolio.js** - The validator highlighted missing semicolons and overused semicolons in the code. These issues have been identified and resolved to adhere to proper coding conventions.
 
-**help.js** - The validator highlighted missing semicolons and overused semicolons in the code. These issues have been identified and resolved to adhere to proper coding conventions.
+**ap.js** - 
 
 **nav.js** - The validator highlighted missing semicolons and overused semicolons in the code. These issues have been identified and resolved to adhere to proper coding conventions.
 
@@ -401,6 +477,7 @@ Developed by **Rhys.Alexander.Few**
 * YouTube video tutorial: "JavaScript Event Listeners on Dynamically Created Elements" by The Net Ninja. Retrieved from: https://www.youtube.com/watch?v=m3StLl-H4CY
 
 Please note that these resources were used for learning and reference purposes during the development of the project, with the exception of the scroll bar and the column template where I copied and pasted the webkit code.
+
 
 
 
