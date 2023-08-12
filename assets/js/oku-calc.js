@@ -96,17 +96,27 @@ let calculationMode = "divide"; // Track the current calculation mode
 
 
 document.getElementById("cap-el").addEventListener('input', function (event) {
+    // Check if the input is a valid number
+    if (isNaN(event.target.value.replace(/,/g, ''))) {
+        event.target.value = ""; // Clear the input value if it's not a valid number
+        return; // Prevent further processing
+    }
     formatInputValue(event);
     updateProbability();
     if (calculationMode === "divide") {
         calcDivide();
-        barStart(); // Call barStart() after updating the calculation
+        barStart();
     } else {
         calcMultiply();
     }
 });
 
 document.getElementById("sup-el").addEventListener('input', function (event) {
+    // Check if the input is a valid number
+    if (isNaN(event.target.value.replace(/,/g, ''))) {
+        event.target.value = ""; // Clear the input value if it's not a valid number
+        return; // Prevent further processing
+    }
     formatInputValue(event);
     updateProbability();
     if (calculationMode === "divide") {
@@ -247,13 +257,13 @@ function barStart() {
     if (inputValid) {
         // All values are present and valid
         // Hide the element
-        let certain = document.getElementById("certain");
-        certain.style.display = "none";
+        let clear = document.getElementById("clear");
+        clear.style.display = "none";
     } else {
         // Any of the values is empty, not a number, or less than or equal to 0
         // Show the element
-        let certain = document.getElementById("certain");
-        certain.style.display = "block";
+        let clear = document.getElementById("clear");
+        clear.style.display = "block";
     }
 }
 
