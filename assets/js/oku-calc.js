@@ -7,6 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const tabInfo = document.getElementById("tab_info"); // Get the p element
     const body = document.body;
 
+    const clearLikely = document.getElementById("likely");
+    const clearMaybe = document.getElementById("maybe");
+    const clearUnlikely = document.getElementById("unlikely");
+
     // Function to add 'portfolio-active' class when portfolio tab is clicked
     function activatePortfolio() {
         body.classList.add('portfolio-active');
@@ -39,6 +43,20 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('oku-calc').addEventListener('click', function () {
         isReverted = false; // Reset isReverted to false when oku calc is clicked
         tabInfo.innerHTML = originalText; // Revert to the initial HTML content
+    });
+
+    // Function to clear the display style of the specified elements
+    function clearStyles(...elements) {
+        elements.forEach(element => {
+            element.style.display = "none";
+        });
+    }
+    
+    portfolioTab.addEventListener('click', () => {
+        // Call the clearStyles function to hide the specified elements
+        clearStyles(clearLikely, clearMaybe, clearUnlikely);
+        // The rest of your portfolio tab logic
+        valueReset();
     });
 
 
@@ -330,9 +348,23 @@ function updateCalculation() {
 function calcSwitch(event) {
     event.preventDefault(); // Prevent the form from submitting
     const inputSupplyElement = document.getElementById("sup-el");
+    const clearLikely = document.getElementById("likely");
+    const clearMaybe = document.getElementById("maybe");
+    const clearUnlikely = document.getElementById("unlikely");
+
+    // Function to clear the display style of the specified elements
+    function clearStyles(...elements) {
+        elements.forEach(element => {
+            element.style.display = "none";
+        });
+    }
 
     if (checkBox.checked) {
         checkBox.checked = false;
+
+        // Clear the specified elements
+        clearStyles(clearLikely, clearMaybe, clearUnlikely);
+
         capSwitch.innerHTML = `
             <span class="tooltip-btn"
                 title="(Market Cap = Current Price per Coin x Circulating Supply). Market Cap, short for Market Capitalisation, is a financial metric used to measure the total value or size of a publicly traded company or a cryptocurrency.">Market
@@ -360,6 +392,10 @@ function calcSwitch(event) {
         barStart();
     } else {
         checkBox.checked = true;
+
+        // Clear the specified elements
+        clearStyles(clearLikely, clearMaybe, clearUnlikely);
+
         capSwitch.innerHTML = `
             <span class="tooltip-btn" title="Enter your desired price target ...">Price</span>` ;
         supSwitch.innerHTML = `
