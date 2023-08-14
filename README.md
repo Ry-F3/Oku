@@ -442,7 +442,7 @@ Remove Input: Bitcoin | Net Worth: $500 | Remove an asset (Bitcoin) from the por
 
 **nav.js** - The validator highlighted missing semicolons and overused semicolons in the code. These issues have been identified and resolved to adhere to proper coding conventions.
 
-**oku-cal.js** - It was flagged that four variables are undefined and five variables are unused. However, these variables are actually utilised in the code, and removing them would break the functionality. It is possible that the validation tool misinterpreted their usage or didn't fully capture it. Alternatively, it could be due to not following the expected conventions. I would appreciate any feedback on this.
+**oku-cal.js** - It was flagged that four variables are undefined and five variables are unused. However, these variables are actually utilised in the code, and removing them would break the functionality. It is possible that the validation tool misinterpreted their usage or didn't fully capture it. Alternatively, it could be due to not following the expected conventions. I would appreciate any feedback on this. (JavaScript has now been refactored all variables used).
 
 #### **HTML validation** using [W3 Validator](https://validator.w3.org/#validate_by_input) :
 
