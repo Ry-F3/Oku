@@ -375,7 +375,7 @@ By incorporating ARIA labels and employing high contrast colours, the website st
     * Used for some of the website's icons.
 
 * [Font Awesome](https://khan.github.io/Font-Awesome/) 
-    git push* Used for most of the website's icons.
+    * Used for most of the website's icons.
 
 * [Google Fonts](https://fonts.google.com/)
     * Used tool to pair fonts.
