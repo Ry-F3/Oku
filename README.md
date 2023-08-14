@@ -12,7 +12,7 @@
 ## **Background**
 
 
-Project Oku is a crypto calculator designed to address the needs of traders in the cryptocurrency market. It aims to provide users with the tools to discover realistic price targets and to calculate the value of their assets. This readme file serves as a guide to understanding the purpose and functionality of Oku.
+Oku is a crypto calculator designed to address the needs of traders in the cryptocurrency market. It aims to provide users with the tools to discover realistic price targets and to calculate the value of their assets. This readme file serves as a guide to understanding the purpose and functionality of Oku.
 
 **Market Dynamics and the Need for a Price Target Crypto Calculator:**<br>
 Financial markets, including the cryptocurrency market, operate in cycles characterised by periods of bullish and bearish sentiment. Greed drives the market during bull runs, while fear dominates during bearish periods. In the realm of cryptocurrencies, many individuals seek quick wealth without fully understanding the underlying mathematics and technical analysis.
