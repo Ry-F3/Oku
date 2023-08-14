@@ -34,7 +34,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (isReverted) {
             tabInfo.innerText = "Discover your true financial POWER and elevate your wealth game by summing up all your valuable assets! Calculate your net worth and uncover the path to financial success!";
-            console.log("change");
         } else {
             tabInfo.innerHTML = originalText; // Revert to the original HTML content
         }
