@@ -6,7 +6,7 @@
 ### To view the project please [click here](https://ry-f3.github.io/Oku/).
 <br>
 
-![Index page screenshot](/assets/images/screenshots/main.png)
+![Index page screenshot](/assets/images/screenshots/responsive.png)
 
 
 ## **Background**
@@ -161,6 +161,16 @@ I found further inspiration for the design and functionality of my page from the
 
 ## **Features**
 
+### **Navbar** 
+
+![Vavbar](/assets/images/screenshots/navigation.png)
+
+* **Navbar with Logo and Links:** The navigation bar features a clickable logo that takes users back to the main landing page. On the far right, there's a convenient link to access the MetaMask crypto wallet.
+
+* **Live Cryptocurrency Prices:** In the center of the navbar, we've integrated [CoinGecko's](https://www.coingecko.com/en/api) API to display up-to-the-minute cryptocurrency prices. Stay informed about market changes right from our site!
+
+* **Tagline:** There is a tagline to give users a quick glimpse of what our site has to offer.
+
 ### **Calculator** 
 
 ![Calculator-divide](/assets/images/screenshots/calc.png)
@@ -191,7 +201,6 @@ document.getElementById("cap-el").addEventListener('input', function (event) {
     }
 });
 ```
-
 
 To switch between calculation modes (division and multiplication), users can interact with the application’s switch toggle. This feature enhances the calculator's versatility, allowing users to tailor their assessment method. 
 
@@ -268,6 +277,18 @@ During the development process, I encountered a scenario that involved adding an
 With my mentor's guidance, I explored different approaches and solutions to achieve the desired functionality. Using JavaScript, I took on the task of manipulating the HTML structure by implementing specific functions triggered by user interactions. This allowed me to dynamically add or remove inputs based on the user's actions, resulting in a seamless and responsive user experience.
 The mentor's role was pivotal in this process, offering guidance, suggestions, and insights into effective techniques. They shared their expertise, pointing me in the right direction while encouraging independent problem-solving. By collaborating with my mentor, I was able to learn from their experience and successfully implement the desired functionality in my application.
 Encountering and resolving this scenario not only expanded my technical skills but also emphasised the importance of seeking guidance and leveraging the knowledge of mentors. Their support and guidance empowered me to overcome challenges and deliver a robust, user-friendly solution.
+
+### **Future Enhancements:**
+
+* Seamless Portfolio Tracking: I will be working on a feature that will allow you to interact with our website using your MetaMask wallet. Easily input your digital asset data, and we'll do the rest, giving you real-time updates on the value of your portfolio.
+
+* User Authentication: To ensure security and personalised experiences, we'll implement user authentication. Your data will be safe and accessible only to you.
+
+* Comprehensive Portfolio Management: I will be developing tools to help you manage your digital assets effortlessly. Add, remove, and edit holdings with ease, and input past transactions for accurate performance metrics.
+
+* Visualise Your Portfolio: See the performance of your portfolio over time with interactive graphs and charts. Understand how your investments are doing at a glance.
+
+* Stay Secure: Security is a top priority. I will implement robust encryption, follow best practices, and explore advanced security measures to keep your data safe.
 
 ## **Favicon** 
 
@@ -389,6 +410,8 @@ Access the website on a desktop device and click the question mark icon | 	Displ
 Add Input: Bitcoin<br>Amount: 2<br>Price: $50 | Net Worth: $100 | Add an asset to the portfolio with the name "Bitcoin", an amount of 2, and a price of $50. Calculate the net worth based on the entered asset data.
 Remove Input: Bitcoin | Net Worth: $500 | Remove an asset (Bitcoin) from the portfolio and calculate the net worth based on the remaining assets.
 
+### **Deployment**
+
 ### **Testing on different devices**
 
 * Samsung Flip3 
@@ -433,13 +456,13 @@ Remove Input: Bitcoin | Net Worth: $500 | Remove an asset (Bitcoin) from the por
 
 **Index.html**:
 
-![SEO](/assets/images/screenshots/seo1.png)
+![SEO](/assets/images/screenshots/desktop.png)
 
 ##### Mobile:
 
 **Index.html**:
 
-![SEO](/assets/images/screenshots/seo2.png)
+![SEO](/assets/images/screenshots/mobile.png)
 
 
 ## **Credits**
