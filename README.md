@@ -415,6 +415,12 @@ Remove Input: Bitcoin | Net Worth: $500 | Remove an asset (Bitcoin) from the por
 
 ### **Deployment**
 
+* This application was deployed to GitHub Pages. Follow these steps:
+    * **Open GitHub Repository:** Head over to your GitHub repository.
+    * **Go to Settings:** Click on the "Settings" tab.
+    * **Select Source Branch:** In the "Source" section, pick "Master Branch" from the drop-down menu.
+    * **Observe the Process:** As soon as you select the master branch, watch the page refresh. You'll see a ribbon display that indicates your successful deployment on GitHub Pages.
+
 ### **Testing on different devices**
 
 * Samsung S22
