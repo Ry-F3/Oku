@@ -18,3 +18,5 @@ $.ajax(liveprice).done(function (response){
     doge.innerHTML = response.dogecoin.usd.toFixed(3);
 
 });
+
+// Code used and found on a blog called code prime. Some alterations have been made.

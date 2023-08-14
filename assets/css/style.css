@@ -614,7 +614,6 @@ footer a {
         /* Set a maximum width for the tooltip box */
     }
 
-
 }
 
 @media (max-width: 412px) {
@@ -709,12 +708,9 @@ footer a {
         position: relative;
     }
 
-    
-
 }
 
 @media (max-width: 319px) {
-
 
     .assetBox {
         width: 68px;

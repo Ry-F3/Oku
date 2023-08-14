@@ -383,6 +383,9 @@ By incorporating ARIA labels and employing high contrast colours, the website st
 * [Responsinator](http://www.responsinator.com/)
     * Used to test the responsiveness of the website. 
 
+* [Canva](https://www.canva.com/)
+    * Used to create a logo and the favicon.
+
 ## **Testing**
 
 ### **Testing User Stories**
@@ -414,6 +417,9 @@ Remove Input: Bitcoin | Net Worth: $500 | Remove an asset (Bitcoin) from the por
 
 ### **Testing on different devices**
 
+* Samsung S22
+    * Tooltips were directed off the screen this has now been resolved. Tap the headings for information.
+
 * Samsung Flip3 
     * Icons not working in the porfolio section.
     * Question mark icon has not been made responsive for mobile devices.
@@ -432,7 +438,7 @@ Remove Input: Bitcoin | Net Worth: $500 | Remove an asset (Bitcoin) from the por
  
 **Porfolio.js** - The validator highlighted missing semicolons and overused semicolons in the code. These issues have been identified and resolved to adhere to proper coding conventions.
 
-**ap.js** - 
+**ap.js** - The validator lists '$' as an undefined variable. I used the code from this blog on [Code Prime](https://blog.codeprime.club/2022/02/how-to-show-live-price-of-cryptocurrency-coin.html) to get it to work
 
 **nav.js** - The validator highlighted missing semicolons and overused semicolons in the code. These issues have been identified and resolved to adhere to proper coding conventions.
 
@@ -498,6 +504,9 @@ Developed by **Rhys.Alexander.Few**
 * Stack Overflow post: "Adding numbers in a for loop in JavaScript" on Stack Overflow. Retrieved from: https://stackoverflow.com/questions/11686724/adding-numbers-in-for-loop-javascript
 
 * YouTube video tutorial: "JavaScript Event Listeners on Dynamically Created Elements" by The Net Ninja. Retrieved from: https://www.youtube.com/watch?v=m3StLl-H4CY
+
+* Code Prime blog: "Javascript synatax and steps followed to
+enable the use of an API within the navbar." Retrieved from: https://blog.codeprime.club/2022/02/how-to-show-live-price-of-cryptocurrency-coin.html
 
 Please note that these resources were used for learning and reference purposes during the development of the project, with the exception of the scroll bar and the column template where I copied and pasted the webkit code.
 
