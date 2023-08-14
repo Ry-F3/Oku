@@ -605,6 +605,15 @@ footer a {
         display: none;
     }
 
+    .tooltip-btn::after {
+        right: 40px;
+        transform: translateX(10%);
+        transform: translateY(-10%);
+        /* Allow the text to wrap to multiple lines */
+        max-width: 150px;
+        /* Set a maximum width for the tooltip box */
+    }
+
 
 }
 
